@@ -1,0 +1,59 @@
+Generate a task-specific evaluation rubric for the following task.
+
+## User Request
+{user_request}
+
+## Expected Task Steps
+{task_steps}
+
+## Available Tools
+{available_tools}
+
+## Generated DAG Structure
+**Nodes ({num_nodes}):**
+{task_nodes}
+
+**Links ({num_links}):**
+{task_links}
+
+## Universal Rubric Dimensions (Already Covered)
+The following dimensions are already covered by the universal rubric and should NOT be repeated:
+1. **Structural Integrity & Logical Consistency** - DAG structural completeness, acyclic validity, logically sound dependencies and data flow
+2. **Functional Requirement Coverage** - Meeting all user requirements, no missing critical steps, output matches expectations
+3. **Modality & Type Consistency** - Input/output modality and type matching between connected tools, proper format conversions
+4. **Tool Semantic Matching** - Selecting tools that are semantically appropriate for each step's intended operation
+
+## Your Task
+Generate 3-4 **additional** evaluation dimensions that:
+1. **Complement** the universal rubric (not duplicate it)
+2. Are **unique** to this specific task or domain
+3. Are **atomic** - each dimension should be independent and non-overlapping with others
+4. Focus on **task-specific nuances** that the universal rubric doesn't capture
+
+### Examples of Good Task-Specific Dimensions:
+- **Audio-Visual Synchronization Quality** (for video editing tasks)
+- **Multi-language Translation Accuracy** (for translation tasks)
+- **Real-time Processing Latency** (for streaming tasks)
+- **Privacy and Security Compliance** (for data handling tasks)
+
+### Anti-Patterns to Avoid:
+❌ Don't use "Tool Selection" (overlaps with Semantic Tool Alignment)
+❌ Don't use "DAG Structure" (overlaps with Structural Integrity)
+❌ Don't use "Efficiency" (overlaps with Resource Optimization)
+❌ Don't create overlapping dimensions (e.g., both "Audio Quality" and "Sound Clarity")
+
+For each dimension:
+- **Theme**: Unique, descriptive name (1-5 words)
+- **Description**: What this dimension measures and why it's critical for THIS task
+- **Tips**: 3-5 specific, actionable evaluation criteria
+- **Atomicity**: Ensure each tip relates to ONE aspect (don't mix multiple concerns)
+
+Output format:
+Dimension 1:
+Theme: [Unique, task-specific name not covered by universal rubric]
+Description: [Why this dimension matters for this specific task]
+- Tip: [Specific criterion 1]
+- Tip: [Specific criterion 2]
+- Tip: [Specific criterion 3]
+
+[Continue for 2-4 dimensions]

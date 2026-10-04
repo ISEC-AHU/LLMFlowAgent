@@ -1,0 +1,122 @@
+/* markdown */
+.custom-h1 {
+  color: #2c3e50;
+  font-size: 2.2em;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+.custom-h2 {
+  color: #34495e;
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 0.75em;
+}
+
+.custom-paragraph {
+  line-height: 1.6;
+  margin-bottom: 1em;
+}
+
+.custom-paragraph a {
+  color: #007bff;
+  text-decoration: none;
+  padding-bottom: 2px;
+}
+
+.custom-paragraph a:hover {
+  text-decoration: underline;
+}
+
+.custom-code {
+  background-color: #f4f4f4;
+  padding: 0.2em;
+  border-radius: 4px;
+  font-family: 'Courier New', Courier, monospace;
+  margin-bottom: 1em;
+}
+
+.custom-list-item {
+  margin-bottom: 0.5em;
+}
+
+.custom-list {
+  margin-bottom: 1em;
+}
+
+.custom-ordered-list {
+  margin-left: 1.5em;
+  list-style-type: decimal;
+  margin-bottom: 1em;
+}
+
+.markdown-content {
+  width: 100%;
+  min-width: 0;
+  padding: 1.5rem 0 3rem;
+  color: #253042;
+}
+
+.markdown-content h3 {
+  margin: 1.5rem 0 0.75rem;
+  color: #34495e;
+  font-size: 1.35rem;
+  font-weight: 700;
+}
+
+.markdown-content a {
+  color: #1677ff;
+  text-decoration: none;
+}
+
+.markdown-content a:hover {
+  text-decoration: underline;
+}
+
+.markdown-content table {
+  display: block;
+  width: 100%;
+  margin: 1rem 0 1.5rem;
+  overflow-x: auto;
+  border-collapse: collapse;
+  white-space: nowrap;
+}
+
+.markdown-content th,
+.markdown-content td {
+  padding: 0.65rem 0.85rem;
+  border: 1px solid #d9e0ea;
+  text-align: left;
+}
+
+.markdown-content th {
+  background: #f3f7fc;
+  font-weight: 700;
+}
+
+.markdown-content tr:nth-child(even) td {
+  background: #fafcff;
+}
+
+.markdown-content pre {
+  margin: 1rem 0;
+  padding: 1rem;
+  overflow-x: auto;
+  border-radius: 8px;
+  background: #f6f8fa;
+}
+
+.markdown-content pre .custom-code {
+  padding: 0;
+  background: transparent;
+}
+
+.markdown-content img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 1rem auto 1.5rem;
+  border: 1px solid #e5eaf1;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgb(31 52 81 / 10%);
+}

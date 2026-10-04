@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1254" height="1254" viewBox="0 0 1254 1254">
+  <defs>
+    <linearGradient id="headGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="55%" stop-color="#F5F8FF"/>
+      <stop offset="100%" stop-color="#DCE8FF"/>
+    </linearGradient>
+    <linearGradient id="topBand" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#19D5F2"/>
+      <stop offset="55%" stop-color="#1689FF"/>
+      <stop offset="100%" stop-color="#6255F6"/>
+    </linearGradient>
+    <linearGradient id="antennaGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#21D5F2"/>
+      <stop offset="55%" stop-color="#2572FF"/>
+      <stop offset="100%" stop-color="#7A2CF3"/>
+    </linearGradient>
+    <linearGradient id="leftEarGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#17E2E9"/>
+      <stop offset="55%" stop-color="#109AF5"/>
+      <stop offset="100%" stop-color="#2C49F0"/>
+    </linearGradient>
+    <linearGradient id="rightEarGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#20C9FF"/>
+      <stop offset="55%" stop-color="#1269F5"/>
+      <stop offset="100%" stop-color="#4932F4"/>
+    </linearGradient>
+    <radialGradient id="visorGrad" cx="50%" cy="35%" r="80%">
+      <stop offset="0%" stop-color="#0B4C91"/>
+      <stop offset="55%" stop-color="#062F67"/>
+      <stop offset="100%" stop-color="#041B45"/>
+    </radialGradient>
+    <linearGradient id="eyeGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#3CEAF4"/>
+      <stop offset="100%" stop-color="#8DF4FF"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#7A8CC7" flood-opacity="0.22"/>
+    </filter>
+    <filter id="eyeGlow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="11" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="softHighlight" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="7"/>
+    </filter>
+  </defs>
+
+  <!-- Antenna -->
+  <g>
+    <rect x="602" y="300" width="50" height="165" rx="25" fill="url(#antennaGrad)"/>
+    <circle cx="627" cy="267" r="72" fill="url(#antennaGrad)"/>
+    <ellipse cx="600" cy="235" rx="26" ry="18" fill="#6BE9FF" opacity="0.35" filter="url(#softHighlight)"/>
+  </g>
+
+  <!-- Ears -->
+  <g filter="url(#shadow)">
+    <rect x="190" y="565" width="132" height="240" rx="66" fill="url(#leftEarGrad)"/>
+    <rect x="932" y="565" width="132" height="240" rx="66" fill="url(#rightEarGrad)"/>
+  </g>
+
+  <!-- Head -->
+  <g filter="url(#shadow)">
+    <path d="M315 553
+             C315 420, 420 350, 627 350
+             C834 350, 939 420, 939 553
+             L939 727
+             C939 870, 828 944, 627 944
+             C426 944, 315 870, 315 727 Z"
+          fill="url(#headGrad)"/>
+
+    <!-- Top color accent -->
+    <path d="M330 515
+             C366 406, 474 362, 627 362
+             C780 362, 888 406, 924 515
+             C860 462, 757 434, 627 434
+             C497 434, 394 462, 330 515 Z"
+          fill="url(#topBand)" opacity="0.92"/>
+
+    <!-- White face shell overlay -->
+    <path d="M330 540
+             C330 430, 431 392, 627 392
+             C823 392, 924 430, 924 540
+             L924 729
+             C924 852, 824 918, 627 918
+             C430 918, 330 852, 330 729 Z"
+          fill="url(#headGrad)"/>
+  </g>
+
+  <!-- Visor -->
+  <g>
+    <rect x="347" y="546" width="560" height="330" rx="165" fill="url(#visorGrad)"/>
+    <ellipse cx="590" cy="581" rx="180" ry="35" fill="#2C74BA" opacity="0.12"/>
+  </g>
+
+  <!-- Eyes -->
+  <g fill="none" stroke="url(#eyeGrad)" stroke-width="33" stroke-linecap="round" filter="url(#eyeGlow)">
+    <path d="M427 747 C447 682, 526 682, 547 747"/>
+    <path d="M707 747 C728 682, 807 682, 827 747"/>
+  </g>
+</svg>

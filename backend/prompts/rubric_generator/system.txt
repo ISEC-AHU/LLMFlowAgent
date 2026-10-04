@@ -1,0 +1,24 @@
+You are an expert in evaluating DAG (Directed Acyclic Graph) task planning across various domains.
+
+Your task is to generate evaluation rubrics that assess the quality of task planning and DAG construction.
+
+Key evaluation aspects:
+1. **Structural Integrity & Logical Consistency** - Is the DAG structurally complete and acyclic? Are dependencies logically sound? Is the overall data flow coherent without contradictions?
+2. **Functional Requirement Coverage** - Does the workflow meet all user requirements? Are any critical steps missing? Does the final output match user expectations?
+3. **Modality & Type Consistency** - Do input/output modalities and types match correctly between connected tools? Are necessary data format conversions handled properly?
+4. **Tool Semantic Matching** - Are the selected tools semantically appropriate for each step? Do the tools' capabilities align with the intended operations required by the task?
+
+For each evaluation dimension, provide:
+- A clear **Theme** (dimension name)
+- 3-5 specific **Tips** (actionable evaluation criteria)
+- Brief explanation of why this matters
+
+Output format:
+Dimension 1:
+Theme: [Theme Name]
+Description: [Why this matters]
+- Tip: [Specific criterion 1]
+- Tip: [Specific criterion 2]
+- Tip: [Specific criterion 3]
+
+[Continue for all dimensions]

@@ -1,0 +1,142 @@
+# Unified LLM provider and role configuration.
+# Keep credentials in environment variables; never commit literal API keys.
+
+providers:
+  openai:
+    api_key: ${OPENAI_API_KEY}
+    base_url: ${OPENAI_BASE_URL:https://api.openai.com/v1}
+    default_model: gpt-4o-mini
+    options:
+      timeout: 180
+      max_retries: 3
+
+  azure:
+    api_key: ${AZURE_API_KEY}
+    base_url: ${AZURE_ENDPOINT}/openai/deployments/${DEPLOYMENT_NAME}
+    default_model: gpt-4
+    options:
+      api_version: 2024-02-15-preview
+      timeout: 60
+      max_retries: 3
+
+  anthropic:
+    api_key: ${ANTHROPIC_API_KEY}
+    default_model: claude-3-5-sonnet-20241022
+    options:
+      timeout: 60
+      max_retries: 3
+
+  gemini:
+    api_key: ${GEMINI_API_KEY}
+    base_url: ${GEMINI_BASE_URL:https://generativelanguage.googleapis.com/v1beta/openai/}
+    default_model: gemini-3-flash-preview
+    options:
+      timeout: 60
+      max_retries: 3
+      thinking_level:
+
+  qwen:
+    api_key: ${QWEN_API_KEY}
+    base_url: https://dashscope.aliyuncs.com/compatible-mode/v1
+    default_model: qwen-plus
+    options:
+      timeout: 60
+      max_retries: 3
+
+  zhipu:
+    api_key: ${ZHIPU_API_KEY}
+    base_url: https://open.bigmodel.cn/api/paas/v4
+    default_model: glm-4.7
+    options:
+      timeout: 60
+      max_retries: 3
+
+  moonshot:
+    api_key: ${MOONSHOT_API_KEY}
+    base_url: https://api.moonshot.cn/v1
+    default_model: moonshot-v1-8k
+    options:
+      timeout: 60
+      max_retries: 3
+
+  deepseek:
+    api_key: ${DEEPSEEK_API_KEY}
+    base_url: https://api.deepseek.com
+    default_model: deepseek-chat
+    options:
+      timeout: 60
+      max_retries: 3
+
+  baichuan:
+    api_key: ${BAICHUAN_API_KEY}
+    base_url: https://api.baichuan-ai.com/v1
+    default_model: Baichuan2-Turbo
+    options:
+      timeout: 60
+      max_retries: 3
+
+  minimax:
+    api_key: ${MINIMAX_API_KEY}
+    base_url: https://api.minimax.chat/v1
+    default_model: abab6.5s-chat
+    options:
+      timeout: 60
+      max_retries: 3
+
+roles:
+  workflow_generation:
+    provider: gemini
+    model: gemini-3-flash-preview
+  workflow_regeneration:
+    provider: openai
+    model: gpt-4o-mini
+  task_decomposition:
+    provider: openai
+    model: gpt-5.2
+  query_rewrite:
+    provider: openai
+    model: gpt-4o-mini
+  universal_rubric:
+    provider: openai
+    model: gpt-4o-mini
+  draft_rubric:
+    provider: openai
+    model: gpt-4o-mini
+  evaluation_rubric:
+    provider: qwen
+    model: qwen-plus
+  refinement:
+    provider: qwen
+    model: qwen-plus
+  discrepancy_analysis:
+    provider: openai
+    model: gpt-4o-mini
+  embedding:
+    provider: qwen
+    model: text-embedding-v2
+  rerank:
+    provider: qwen
+    model: qwen3-rerank
+
+defaults:
+  universal_rubric:
+    provider: openai
+    model: gpt-4o-mini
+  draft_rubric:
+    provider: openai
+    model: gpt-4o-mini
+  evaluation_rubric:
+    provider: qwen
+    model: qwen-plus
+  refinement:
+    provider: qwen
+    model: qwen-plus
+  simulation:
+    - provider: openai
+      model: gpt-4o-mini
+    - provider: gemini
+      model: gemini-3-flash-preview
+    - provider: qwen
+      model: qwen-plus
+    - provider: deepseek
+      model: deepseek-chat

@@ -1,0 +1,44 @@
+# Secrets and local environment
+.env
+.env.local
+.env.*.local
+backend/.env
+backend/config/llm_providers.local.yaml
+
+# Frontend dependencies and output
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# Python environments and caches
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Runtime data and logs
+backend/data/logs/
+backend/data/cache/
+*.log
+coverage/
+htmlcov/
+
+# IDE and operating-system files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Local tools, exports, and temporary artifacts
+.codex/
+.codex_work/
+.cospec/
+.tmp_doc_inspect/
+.tmp_doc_review/
+tmp/
+outputs/
+*.tar.gz

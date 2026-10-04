@@ -1,0 +1,75 @@
+You are a professional DAG workflow evaluation expert.
+
+Evaluate the given workflow DAG according to the provided rubric.
+
+## Evaluation Rubric
+
+{rubric_description}
+
+## Workflow DAG
+
+{dag_description}
+
+## Tool Validation
+
+{tool_validation}
+
+## Log Conformance Results
+
+{conformance_analysis}
+
+## Evaluation Rules
+
+For each evaluation dimension:
+
+1. Give a score from 1 to 5.
+2. Give a specific reason of 35 to 90 words.
+3. Use Tool Validation and Log Conformance Results only as internal evidence for determining the score.
+4. The reason must:
+
+   * identify the relevant nodes or dependency links;
+   * quote or paraphrase the corresponding requirement from user_request;
+   * explain whether the DAG satisfies or violates that requirement.
+   * when it violates the requirement, explicitly name the missing or extra dependency and explain the resulting workflow risk.
+5. Do not mention logs, log support, confidence values, tool validation, type validation, Dependency Gap Analysis, or scoring rules in the reasoning.
+6. Pay special attention to ordering expressions such as after, next, once both activities are completed, and in parallel.
+7. Treat the authoritative Dependency Links list as the complete current DAG. Never claim that a listed edge is missing and never invent an unlisted edge.
+8. A workflow dependency may be a control-flow prerequisite rather than a direct data-transfer edge. Do not reject a user-required ordering solely because one tool's declared output type differs from the next tool's declared input type.
+9. Include at least one `evidence_checks` item. Record every DAG fact used in the reasoning as a check. Use only `node_exists`, `direct_edge_exists`, or `path_exists`, and set `observed` to the value you actually observe in the authoritative DAG.
+
+## Output Format
+
+## Scoring Reference
+Determine the score based on:
+* Whether the evaluated requirement succeeds or fails
+* Whether the identified issue affects a minor detail or a critical business outcome
+* **5**: Requirement fully succeeds with no meaningful business impact.
+* **4**: Requirement succeeds; only minor issues exist.
+* **3**: Requirement partially succeeds; the issue has moderate business impact.
+* **2**: Requirement largely fails; the issue significantly affects a critical business outcome.
+* **1**: Requirement completely fails and prevents the critical business outcome.
+A missing dependency does not automatically receive a score of 1; score it according to requirement success and business impact.
+
+
+```json
+{{
+  "evaluations": [
+    {{
+      "dimension": "<evaluation dimension name>",
+      "score": <number between 1 and 5>,
+      "reasoning": "<concise reason based on the user request and current DAG>",
+      "evidence_checks": [
+        {{
+          "predicate": "node_exists | direct_edge_exists | path_exists",
+          "node": "<node name; use only for node_exists>",
+          "source": "<source node; use for edge/path checks>",
+          "target": "<target node; use for edge/path checks>",
+          "observed": <true or false>
+        }}
+      ]
+    }}
+  ]
+}}
+```
+
+Cover all {num_dimensions} evaluation dimensions. Do not output any additional text.
