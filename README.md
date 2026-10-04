@@ -57,7 +57,7 @@ We evaluate LLMFlowAgent on workflow modeling quality and analyze the contributi
 - **ProMoAI [6]:** generates process models through LLM-generated code, error handling, and user-guided refinement.
 - **LLM4Workflow [7]:** retrieves relevant API knowledge and generates executable workflow models.
 
-**Implementation.** LLMFlowAgent and all baselines use GPT-4o as their primary model. Multi-model dependency analysis additionally uses `deepseek-chat`, `gemini-3-flash-preview`, `qwen-plus`, and `claude-sonnet-4-6`. The TaskBench tool summaries are used to construct the API knowledge base without reference dependencies. Knowledge entries are embedded using `text-embedding-v2` and reranked using `qwen3-rerank`. LLMFlowAgent performs at most five evaluation rounds, with regeneration and acceptance thresholds of 1 and 4, respectively, on a five-point scale.
+**Implementation.** LLMFlowAgent and all baselines use GPT-4o as their primary model. For multi-model dependency analysis, LLMFlowAgent uses GPT-4o together with `deepseek-chat`, `gemini-3-flash-preview`, and `qwen-plus`. The TaskBench tool summaries are used to construct the API knowledge base without reference dependencies. Knowledge entries are embedded using `text-embedding-v2` and reranked using `qwen3-rerank`. LLMFlowAgent performs at most five evaluation rounds, with regeneration and acceptance thresholds of 1 and 4, respectively, on a five-point scale.
 
 ### Workflow Modeling Performance
 
