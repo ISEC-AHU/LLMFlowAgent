@@ -68,7 +68,7 @@ We evaluate LLMFlowAgent on workflow modeling quality and analyze the contributi
 | RAG+CoT | 89.46 | 60.40 | 30.00 | 3.55 |
 | ProMoAI | 87.57 | 59.49 | 26.67 | 4.35 |
 | LLM4Workflow | 92.09 | 79.32 | 54.33 | 1.80 |
-| **LLMFlowAgent** | **96.27** | **81.45** | **63.67** | **1.45** |
+| **LLMFlowAgent** | **96.24** | **81.45** | **63.67** | **1.45** |
 
 LLMFlowAgent achieves the best result across all four metrics. Compared with LLM4Workflow, the strongest baseline, it improves Node F1, Edge F1, and PMR by 4.18, 2.13, and 9.34 percentage points, respectively, while reducing sGED by 19.44%. The results show that the iterative generation–evaluation–repair process produces more accurate workflow nodes and dependencies and more frequently constructs complete workflow models that match user requirements.
 
