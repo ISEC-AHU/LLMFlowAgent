@@ -36,60 +36,139 @@ Inspect the generated workflow DAG, evaluation scores, evaluation report, repair
 
 ## 👮‍♂️ Evaluation
 
-We evaluate LLMFlowAgent on workflow modeling quality and analyze the contribution of its multi-agent components.
+We evaluate LLMFlowAgent on TaskBench and study whether its complete multi-agent loop is more effective than direct generation or partially ablated variants. The reported experiments address two questions:
 
-### Evaluation Design and Setup
+- **RQ1:** How accurately does LLMFlowAgent generate workflow models compared with representative baselines?
+- **RQ2:** How much does each agent and the Coordinator's adaptive routing contribute to the complete framework?
 
-**Dataset.** We use 300 normalized workflow modeling tasks from **TaskBench** [1], a public multimedia-processing benchmark released by Microsoft. The tasks cover image processing, audio and video conversion, and text editing. Each task contains a natural-language requirement and a reference workflow DAG. The selected workflows contain an average of 3.71 nodes and 2.72 dependency edges; the largest contains 8 nodes and 7 edges. To provide execution evidence, we convert the reference workflows into Petri nets and use PM4Py [2] to simulate execution traces in XES format.
+### Dataset and Evaluation Evidence
 
-**Metrics.** We report four structural metrics:
+We use 300 normalized workflow modeling tasks from **TaskBench** [1], a public multimedia tool-orchestration benchmark. The tasks cover image processing, audio and video conversion, and text editing. Each sample contains a natural-language requirement and a reference API workflow represented as a directed acyclic graph (DAG), where nodes denote APIs and edges denote their invocation dependencies.
 
-- **Node F1:** set-based F1 score for workflow-node matching.
-- **Edge F1:** set-based F1 score for dependency matching.
-- **Perfect Match Rate (PMR):** percentage of generated workflows whose node and edge sets both exactly match the references.
-- **Simplified Graph Edit Distance (sGED):** average number of missing and redundant nodes and dependency edges; lower values are better.
+The selected workflows contain an average of 3.71 nodes and 2.72 dependency edges, while the largest contains 8 nodes and 7 edges. These statistics make TaskBench suitable for evaluating both API selection and dependency construction under controlled workflow structures.
 
-**Baselines.** We compare LLMFlowAgent with five representative methods:
+To provide consistent execution evidence, every ground-truth workflow is converted into an executable Petri net. PM4Py [2] then simulates execution traces and exports them as XES event logs. Consequently, each evaluation sample contains a natural-language description, a reference DAG, and a controlled ground-truth-derived event log.
 
-- **Few-shot [3]:** generates a workflow from the requirement, complete API list, and workflow examples.
-- **CoT [4]:** reasons step by step about API selection and dependency construction using the complete API list.
-- **RAG+CoT [4,5]:** applies CoT to the top-*k* APIs retrieved for the requirement.
-- **ProMoAI [6]:** generates process models through LLM-generated code, error handling, and user-guided refinement.
-- **LLM4Workflow [7]:** retrieves relevant API knowledge and generates executable workflow models.
+### Metrics
 
-**Implementation.** LLMFlowAgent and all baselines use GPT-4o as their primary model. For multi-model dependency analysis, LLMFlowAgent uses GPT-4o together with `deepseek-chat`, `gemini-3-flash-preview`, and `qwen-plus`. The TaskBench tool summaries are used to construct the API knowledge base without reference dependencies. Knowledge entries are embedded using `text-embedding-v2` and reranked using `qwen3-rerank`. LLMFlowAgent performs at most five evaluation rounds, with regeneration and acceptance thresholds of 1 and 4, respectively, on a five-point scale.
+We evaluate workflow generation quality at different levels of structural granularity. Let $N$ denote the number of workflow modeling tasks. For each task, let $G_{\mathrm{gt}}=(V_{\mathrm{gt}},E_{\mathrm{gt}})$ and $G_{\mathrm{pred}}=(V_{\mathrm{pred}},E_{\mathrm{pred}})$ denote the ground-truth and generated workflow models, respectively.
 
-### Workflow Modeling Performance
+#### Perfect Match Rate
 
-| Method | Node F1 (%) ↑ | Edge F1 (%) ↑ | PMR (%) ↑ | sGED ↓ |
+Perfect Match Rate (PMR) evaluates the correctness of the complete workflow structure:
+
+$$
+\operatorname{PMR}=\frac{1}{N}\sum_{i=1}^{N}\mathbb{I}\left(G_{\mathrm{pred},i}=G_{\mathrm{gt},i}\right).
+$$
+
+The indicator function returns one only when both $V_{\mathrm{pred},i}=V_{\mathrm{gt},i}$ and $E_{\mathrm{pred},i}=E_{\mathrm{gt},i}$; otherwise, it returns zero.
+
+#### Node and Dependency Matching
+
+We use set-based Precision, Recall, and F1 to evaluate the accuracy of workflow node selection and dependency construction. For $X\in\{V,E\}$:
+
+$$
+\operatorname{Precision}(X)=\frac{|X_{\mathrm{pred}}\cap X_{\mathrm{gt}}|}{|X_{\mathrm{pred}}|}, \qquad
+\operatorname{Recall}(X)=\frac{|X_{\mathrm{pred}}\cap X_{\mathrm{gt}}|}{|X_{\mathrm{gt}}|},
+$$
+
+$$
+\operatorname{F1}(X)=\frac{2\,\operatorname{Precision}(X)\operatorname{Recall}(X)}{\operatorname{Precision}(X)+\operatorname{Recall}(X)}.
+$$
+
+When $X=V$, the resulting Node F1 measures agreement between the generated and ground-truth workflow nodes. When $X=E$, Edge F1 measures the correctness of the generated dependency relationships. Dataset-level results are obtained by averaging the corresponding F1 scores across all workflow modeling tasks.
+
+#### Simplified Graph Edit Distance
+
+We use a set-based simplified Graph Edit Distance (sGED) to quantify the overall structural difference between a generated workflow and its ground truth:
+
+$$
+\operatorname{sGED}(G_{\mathrm{pred}},G_{\mathrm{gt}})=
+|V_{\mathrm{gt}}\setminus V_{\mathrm{pred}}|+
+|V_{\mathrm{pred}}\setminus V_{\mathrm{gt}}|+
+|E_{\mathrm{gt}}\setminus E_{\mathrm{pred}}|+
+|E_{\mathrm{pred}}\setminus E_{\mathrm{gt}}|.
+$$
+
+sGED counts missing and redundant nodes and dependency edges. A lower value indicates that the generated workflow is structurally closer to the ground-truth model. Dataset-level sGED is obtained by averaging the scores across all workflow modeling tasks.
+
+### Baselines
+
+To validate its effectiveness, we compare LLMFlowAgent with five representative methods covering prompting-based, retrieval-augmented, and workflow-specific generation paradigms.
+
+#### Few-shot [3]
+
+Under the few-shot setting, the LLM receives the workflow requirement, the complete API list, several workflow generation examples, and a predefined JSON output schema. It then directly generates the workflow DAG.
+
+#### Chain-of-Thought (CoT) [4]
+
+The CoT baseline provides the LLM with the workflow requirement and complete API list and prompts it to reason step by step about the required APIs and their dependencies before generating the workflow DAG.
+
+#### RAG+CoT [4,5]
+
+RAG+CoT first retrieves the top-$k$ candidate APIs from the API knowledge base according to the workflow requirement. CoT prompting is subsequently applied to select the required APIs and construct their dependency relationships.
+
+#### ProMoAI [6]
+
+ProMoAI employs LLMs and prompt engineering to transform natural-language process descriptions into process models. It incorporates error handling and code generation and supports interactive model refinement through user feedback.
+
+#### LLM4Workflow [7]
+
+LLM4Workflow retrieves relevant API knowledge according to a natural-language workflow description and employs an LLM to generate an executable workflow model.
+
+### Implementation Details
+
+LLMFlowAgent and all baselines use GPT-4o as their primary generation model. For multi-model dependency analysis, LLMFlowAgent uses GPT-4o together with `deepseek-chat`, `gemini-3-flash-preview`, and `qwen-plus`. The maximum number of evaluation rounds is five. On the five-point evaluation scale, workflows scoring 1 or below are regenerated, workflows scoring above 1 but below 4 are repaired, and workflows scoring 4 or above are accepted; if no version reaches the acceptance threshold, the highest-scoring version is returned.
+
+We construct a fixed API knowledge base from the tool summaries provided by TaskBench. Reference edges and workflow topology are excluded. Entries are encoded with `text-embedding-v2`, stored in a vector index, and reranked with `qwen3-rerank`. All methods use the same underlying tool inventory, and retrieval-based methods use the same fixed index.
+
+### Overall Workflow Modeling Results (RQ1)
+
+| Method | PMR (%) ↑ | Node F1 (%) ↑ | Edge F1 (%) ↑ | sGED ↓ |
 |:--|--:|--:|--:|--:|
-| Few-shot | 85.27 | 56.64 | 25.00 | 4.26 |
-| CoT | 88.17 | 60.53 | 33.33 | 3.58 |
-| RAG+CoT | 89.46 | 60.40 | 30.00 | 3.55 |
-| ProMoAI | 87.57 | 59.49 | 26.67 | 4.35 |
-| LLM4Workflow | 92.09 | 79.32 | 54.33 | 1.80 |
-| **LLMFlowAgent** | **96.24** | **81.45** | **63.67** | **1.45** |
+| Few-shot | 25.00 | 85.27 | 56.64 | 4.26 |
+| CoT | 33.33 | 88.17 | 60.53 | 3.58 |
+| RAG+CoT | 30.00 | 89.46 | 60.40 | 3.55 |
+| ProMoAI | 26.67 | 87.57 | 59.49 | 4.35 |
+| LLM4Workflow | 54.33 | 92.09 | 79.32 | 1.80 |
+| **LLMFlowAgent** | **63.67** | **96.24** | **81.45** | **1.45** |
 
-LLMFlowAgent achieves the best result across all four metrics. Compared with LLM4Workflow, the strongest baseline, it improves Node F1, Edge F1, and PMR by 4.18, 2.13, and 9.34 percentage points, respectively, while reducing sGED by 19.44%. The results show that the iterative generation–evaluation–repair process produces more accurate workflow nodes and dependencies and more frequently constructs complete workflow models that match user requirements.
+LLMFlowAgent achieves the best result across all four metrics. LLM4Workflow is the strongest baseline on TaskBench; compared with it, LLMFlowAgent improves PMR, Node F1, and Edge F1 by 9.34, 4.15, and 2.13 percentage points, respectively, while reducing sGED from 1.80 to 1.45, a relative reduction of 19.44%.
 
-### Ablation Study
+The improvement in Node F1 is consistent with the use of task decomposition, query rewriting, and knowledge-grounded API retrieval, which help the Generation Agent identify APIs that better match the workflow requirement. More importantly, the larger improvement in PMR indicates that the subsequent evaluation and repair process corrects critical dependency errors that prevent otherwise nearly correct DAGs from exactly matching the reference models. Overall, the results show that LLMFlowAgent improves both individual node and dependency decisions and the correctness of the complete workflow structure.
 
-We conduct an ablation study on TaskBench while retaining the same model and retrieval configurations for all remaining components:
+**Answer to RQ1:** LLMFlowAgent consistently outperforms all baseline methods on TaskBench. Its improvements in Edge F1, PMR, and sGED demonstrate a stronger ability to construct complete and accurate dependency structures for workflow modeling tasks.
 
-- **w/o Coordinator:** replaces adaptive score-based routing with a fixed Generation–Evaluation–Repair sequence.
-- **w/o Evaluation & Repair:** returns the initial workflow produced by the Generation Agent without evaluation or refinement.
-- **w/o Evaluation:** lets the Repair Agent revise the workflow from only the requirement and current DAG, without an evaluator-generated repair plan.
-- **w/o Repair:** sends the Evaluation Agent's repair plan back to the Generation Agent for complete workflow regeneration.
+### Ablation Study (RQ2)
 
-| Setting | Node F1 (%) ↑ | Edge F1 (%) ↑ | PMR (%) ↑ | sGED ↓ |
+The TaskBench ablation study keeps the model and retrieval configuration of every remaining component unchanged:
+
+- **w/o Coordinator:** replaces quality-aware routing with a fixed Generation–Evaluation–Repair sequence.
+- **w/o Evaluation & Repair:** returns the Generation Agent's initial DAG without evaluation or refinement.
+- **w/o Evaluation:** asks the Repair Agent to revise the requirement and current DAG without an evaluator-generated repair plan.
+- **w/o Repair:** sends the Evaluation Agent's repair plan to the Generation Agent for complete DAG regeneration instead of targeted modification.
+
+| Setting | PMR (%) ↑ | Node F1 (%) ↑ | Edge F1 (%) ↑ | sGED ↓ |
 |:--|--:|--:|--:|--:|
-| w/o Coordinator | 94.51 | 80.24 | 62.00 | 1.57 |
-| w/o Evaluation & Repair | 90.19 | 76.38 | 54.33 | 1.96 |
-| w/o Evaluation | 90.67 | 77.57 | 55.67 | 1.90 |
-| w/o Repair | 95.46 | 80.39 | 62.33 | 1.58 |
-| **LLMFlowAgent** | **96.27** | **81.45** | **63.67** | **1.45** |
+| w/o Coordinator | 62.00 | 94.51 | 80.24 | 1.57 |
+| w/o Evaluation & Repair | 54.33 | 90.19 | 76.38 | 1.96 |
+| w/o Evaluation | 55.67 | 90.67 | 77.57 | 1.90 |
+| w/o Repair | 62.33 | 95.46 | 80.39 | 1.58 |
+| **LLMFlowAgent** | **63.67** | **96.24** | **81.45** | **1.45** |
 
-Removing any component reduces performance, while the complete framework achieves the best results across all metrics. Removing both Evaluation and Repair causes the largest overall degradation, showing the importance of detecting and correcting modeling errors after generation. The Evaluation Agent provides concrete repair guidance, the Repair Agent preserves valid workflow structures through targeted modifications, and the Coordinator Agent routes workflows according to their quality. Their collaboration is therefore more effective than any ablated configuration.
+Removing any component degrades workflow generation performance, while the complete framework achieves the best result across all four metrics.
+
+**1) Role of the Coordinator Agent.** Removing the Coordinator Agent decreases Node F1, Edge F1, and PMR by 1.73, 1.21, and 1.67 percentage points, respectively, while increasing sGED by 0.12. The fixed-sequence variant invokes Generation, Evaluation, and Repair regardless of the current workflow quality. By contrast, the Coordinator Agent routes low-quality workflows to regeneration and locally correctable workflows to targeted repair, enabling quality-aware refinement.
+
+**2) Effect of removing Evaluation and Repair.** This variant exhibits the largest overall degradation. Node F1, Edge F1, and PMR decrease by 6.05, 5.07, and 9.34 percentage points, respectively, while sGED increases by 0.51. Without evaluation and repair, missing or redundant nodes and incorrect dependencies in the initial DAG remain undetected and uncorrected. The particularly large PMR decrease shows that the evaluation–repair loop is important for complete-structure correctness.
+
+**3) Role of the Evaluation Agent.** Removing the Evaluation Agent decreases Node F1, Edge F1, and PMR by 5.57, 3.88, and 8.00 percentage points, respectively, while increasing sGED by 0.45. The Evaluation Agent provides more than an overall score: it uses fine-grained rubrics to localize modeling errors and translate them into concrete repair instructions. Without this guidance, the Repair Agent cannot reliably determine how the initial DAG should be modified.
+
+**4) Role of the Repair Agent.** The w/o Repair variant obtains the best ablated Node F1, Edge F1, and PMR because the Generation Agent can partially regenerate the workflow from evaluation feedback. Nevertheless, its Node F1, Edge F1, and PMR remain 0.78, 1.06, and 1.34 percentage points below the complete framework, respectively, and its sGED is 0.13 higher. This result shows that repair-plan-guided local modifications preserve valid workflow structures more effectively than regenerating the complete DAG.
+
+**5) Synergistic gains of the complete framework.** The Generation Agent constructs the initial workflow, the Evaluation Agent identifies fine-grained errors and formulates repair guidance, and the Repair Agent performs targeted modifications. The Coordinator Agent orchestrates their interactions and selects the next action from the evaluation result. Their complementary operation enables iterative improvement that cannot be achieved by any individual component alone.
+
+**Answer to RQ2:** The ablation results confirm the contribution of each agent and show that their integration under the Coordinator Agent enables LLMFlowAgent to achieve the best overall workflow modeling performance.
 
 ## 🛠️ Getting Started
 
