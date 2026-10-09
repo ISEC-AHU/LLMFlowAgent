@@ -1,0 +1,2283 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<log xes.version="1849-2016" xes.features="nested-attributes" xmlns="http://www.xes-standard.org/">
+	<trace>
+		<string key="concept:name" value="0" />
+		<event>
+			<string key="concept:name" value="Receive customer inquiry" />
+			<date key="time:timestamp" value="2026-01-01T09:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Collect customer information" />
+			<date key="time:timestamp" value="2026-01-01T09:23:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Address customer concerns or questions" />
+			<date key="time:timestamp" value="2026-01-01T09:36:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="1" />
+		<event>
+			<string key="concept:name" value="Receive customer inquiry" />
+			<date key="time:timestamp" value="2026-01-02T09:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Address customer concerns or questions" />
+			<date key="time:timestamp" value="2026-01-02T09:28:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Collect customer information" />
+			<date key="time:timestamp" value="2026-01-02T09:56:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="2" />
+		<event>
+			<string key="concept:name" value="Receive customer inquiry" />
+			<date key="time:timestamp" value="2026-01-03T09:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Address customer concerns or questions" />
+			<date key="time:timestamp" value="2026-01-03T09:22:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Collect customer information" />
+			<date key="time:timestamp" value="2026-01-03T09:41:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="3" />
+		<event>
+			<string key="concept:name" value="Receive customer inquiry" />
+			<date key="time:timestamp" value="2026-01-04T09:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Address customer concerns or questions" />
+			<date key="time:timestamp" value="2026-01-04T09:11:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Collect customer information" />
+			<date key="time:timestamp" value="2026-01-04T09:30:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="4" />
+		<event>
+			<string key="concept:name" value="Receive customer inquiry" />
+			<date key="time:timestamp" value="2026-01-05T09:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Collect customer information" />
+			<date key="time:timestamp" value="2026-01-05T09:21:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Address customer concerns or questions" />
+			<date key="time:timestamp" value="2026-01-05T09:27:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Guide customer in selecting product/service" />
+			<date key="time:timestamp" value="2026-01-05T09:41:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Provide quote" />
+			<date key="time:timestamp" value="2026-01-05T10:02:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Place order" />
+			<date key="time:timestamp" value="2026-01-05T10:27:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Record order in system" />
+			<date key="time:timestamp" value="2026-01-05T10:48:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Send order confirmation to customer" />
+			<date key="time:timestamp" value="2026-01-05T11:17:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="5" />
+		<event>
+			<string key="concept:name" value="Receive customer inquiry" />
+			<date key="time:timestamp" value="2026-01-06T09:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Address customer concerns or questions" />
+			<date key="time:timestamp" value="2026-01-06T09:10:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Collect customer information" />
+			<date key="time:timestamp" value="2026-01-06T09:34:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Guide customer in selecting product/service" />
+			<date key="time:timestamp" value="2026-01-06T10:04:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Provide quote" />
+			<date key="time:timestamp" value="2026-01-06T10:11:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Place order" />
+			<date key="time:timestamp" value="2026-01-06T10:39:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Record order in system" />
+			<date key="time:timestamp" value="2026-01-06T10:53:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Send order confirmation to customer" />
+			<date key="time:timestamp" value="2026-01-06T10:58:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="6" />
+		<event>
+			<string key="concept:name" value="Receive customer inquiry" />
+			<date key="time:timestamp" value="2026-01-07T09:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Collect customer information" />
+			<date key="time:timestamp" value="2026-01-07T09:27:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Address customer concerns or questions" />
+			<date key="time:timestamp" value="2026-01-07T09:39:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Guide customer in selecting product/service" />
+			<date key="time:timestamp" value="2026-01-07T10:02:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Provide quote" />
+			<date key="time:timestamp" value="2026-01-07T10:10:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Place order" />
+			<date key="time:timestamp" value="2026-01-07T10:35:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Record order in system" />
+			<date key="time:timestamp" value="2026-01-07T11:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Send order confirmation to customer" />
+			<date key="time:timestamp" value="2026-01-07T11:27:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="7" />
+		<event>
+			<string key="concept:name" value="Receive customer inquiry" />
+			<date key="time:timestamp" value="2026-01-08T09:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Collect customer information" />
+			<date key="time:timestamp" value="2026-01-08T09:06:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Address customer concerns or questions" />
+			<date key="time:timestamp" value="2026-01-08T09:24:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Guide customer in selecting product/service" />
+			<date key="time:timestamp" value="2026-01-08T09:42:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Provide quote" />
+			<date key="time:timestamp" value="2026-01-08T10:01:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Place order" />
+			<date key="time:timestamp" value="2026-01-08T10:28:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Record order in system" />
+			<date key="time:timestamp" value="2026-01-08T10:58:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Send order confirmation to customer" />
+			<date key="time:timestamp" value="2026-01-08T11:17:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="8" />
+		<event>
+			<string key="concept:name" value="Receive customer inquiry" />
+			<date key="time:timestamp" value="2026-01-09T09:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Collect customer information" />
+			<date key="time:timestamp" value="2026-01-09T09:07:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Address customer concerns or questions" />
+			<date key="time:timestamp" value="2026-01-09T09:29:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Guide customer in selecting product/service" />
+			<date key="time:timestamp" value="2026-01-09T09:55:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Provide quote" />
+			<date key="time:timestamp" value="2026-01-09T10:16:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="9" />
+		<event>
+			<string key="concept:name" value="Receive customer inquiry" />
+			<date key="time:timestamp" value="2026-01-10T09:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Address customer concerns or questions" />
+			<date key="time:timestamp" value="2026-01-10T09:15:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Collect customer information" />
+			<date key="time:timestamp" value="2026-01-10T09:33:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Guide customer in selecting product/service" />
+			<date key="time:timestamp" value="2026-01-10T09:54:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Provide quote" />
+			<date key="time:timestamp" value="2026-01-10T09:59:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Place order" />
+			<date key="time:timestamp" value="2026-01-10T10:13:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Record order in system" />
+			<date key="time:timestamp" value="2026-01-10T10:36:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Send order confirmation to customer" />
+			<date key="time:timestamp" value="2026-01-10T11:03:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="10" />
+		<event>
+			<string key="concept:name" value="Receive customer inquiry" />
+			<date key="time:timestamp" value="2026-01-11T09:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Address customer concerns or questions" />
+			<date key="time:timestamp" value="2026-01-11T09:11:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Collect customer information" />
+			<date key="time:timestamp" value="2026-01-11T09:38:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="11" />
+		<event>
+			<string key="concept:name" value="Receive customer inquiry" />
+			<date key="time:timestamp" value="2026-01-12T09:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Address customer concerns or questions" />
+			<date key="time:timestamp" value="2026-01-12T09:20:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Collect customer information" />
+			<date key="time:timestamp" value="2026-01-12T09:41:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="12" />
+		<event>
+			<string key="concept:name" value="Receive customer inquiry" />
+			<date key="time:timestamp" value="2026-01-13T09:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Address customer concerns or questions" />
+			<date key="time:timestamp" value="2026-01-13T09:21:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Collect customer information" />
+			<date key="time:timestamp" value="2026-01-13T09:51:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="13" />
+		<event>
+			<string key="concept:name" value="Receive customer inquiry" />
+			<date key="time:timestamp" value="2026-01-14T09:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Address customer concerns or questions" />
+			<date key="time:timestamp" value="2026-01-14T09:23:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Collect customer information" />
+			<date key="time:timestamp" value="2026-01-14T09:50:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Guide customer in selecting product/service" />
+			<date key="time:timestamp" value="2026-01-14T10:12:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Provide quote" />
+			<date key="time:timestamp" value="2026-01-14T10:27:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Place order" />
+			<date key="time:timestamp" value="2026-01-14T10:56:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Record order in system" />
+			<date key="time:timestamp" value="2026-01-14T11:10:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Send order confirmation to customer" />
+			<date key="time:timestamp" value="2026-01-14T11:18:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="14" />
+		<event>
+			<string key="concept:name" value="Receive customer inquiry" />
+			<date key="time:timestamp" value="2026-01-15T09:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Collect customer information" />
+			<date key="time:timestamp" value="2026-01-15T09:26:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Address customer concerns or questions" />
+			<date key="time:timestamp" value="2026-01-15T09:33:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="15" />
+		<event>
+			<string key="concept:name" value="Receive customer inquiry" />
+			<date key="time:timestamp" value="2026-01-16T09:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Collect customer information" />
+			<date key="time:timestamp" value="2026-01-16T09:29:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Address customer concerns or questions" />
+			<date key="time:timestamp" value="2026-01-16T09:53:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="16" />
+		<event>
+			<string key="concept:name" value="Receive customer inquiry" />
+			<date key="time:timestamp" value="2026-01-17T09:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Collect customer information" />
+			<date key="time:timestamp" value="2026-01-17T09:15:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Address customer concerns or questions" />
+			<date key="time:timestamp" value="2026-01-17T09:28:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="17" />
+		<event>
+			<string key="concept:name" value="Receive customer inquiry" />
+			<date key="time:timestamp" value="2026-01-18T09:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Collect customer information" />
+			<date key="time:timestamp" value="2026-01-18T09:06:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Address customer concerns or questions" />
+			<date key="time:timestamp" value="2026-01-18T09:25:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Guide customer in selecting product/service" />
+			<date key="time:timestamp" value="2026-01-18T09:30:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Provide quote" />
+			<date key="time:timestamp" value="2026-01-18T09:35:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Place order" />
+			<date key="time:timestamp" value="2026-01-18T09:50:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Record order in system" />
+			<date key="time:timestamp" value="2026-01-18T10:05:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Send order confirmation to customer" />
+			<date key="time:timestamp" value="2026-01-18T10:13:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="18" />
+		<event>
+			<string key="concept:name" value="Receive customer inquiry" />
+			<date key="time:timestamp" value="2026-01-19T09:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Collect customer information" />
+			<date key="time:timestamp" value="2026-01-19T09:07:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Address customer concerns or questions" />
+			<date key="time:timestamp" value="2026-01-19T09:15:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Guide customer in selecting product/service" />
+			<date key="time:timestamp" value="2026-01-19T09:21:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Provide quote" />
+			<date key="time:timestamp" value="2026-01-19T09:46:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="19" />
+		<event>
+			<string key="concept:name" value="Receive customer inquiry" />
+			<date key="time:timestamp" value="2026-01-20T09:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Address customer concerns or questions" />
+			<date key="time:timestamp" value="2026-01-20T09:28:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Collect customer information" />
+			<date key="time:timestamp" value="2026-01-20T09:34:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="20" />
+		<event>
+			<string key="concept:name" value="Receive customer inquiry" />
+			<date key="time:timestamp" value="2026-01-21T09:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Address customer concerns or questions" />
+			<date key="time:timestamp" value="2026-01-21T09:20:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Collect customer information" />
+			<date key="time:timestamp" value="2026-01-21T09:35:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Guide customer in selecting product/service" />
+			<date key="time:timestamp" value="2026-01-21T09:44:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Provide quote" />
+			<date key="time:timestamp" value="2026-01-21T10:03:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Place order" />
+			<date key="time:timestamp" value="2026-01-21T10:27:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Record order in system" />
+			<date key="time:timestamp" value="2026-01-21T10:37:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Send order confirmation to customer" />
+			<date key="time:timestamp" value="2026-01-21T11:07:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="21" />
+		<event>
+			<string key="concept:name" value="Receive customer inquiry" />
+			<date key="time:timestamp" value="2026-01-22T09:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Collect customer information" />
+			<date key="time:timestamp" value="2026-01-22T09:06:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Address customer concerns or questions" />
+			<date key="time:timestamp" value="2026-01-22T09:13:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="22" />
+		<event>
+			<string key="concept:name" value="Receive customer inquiry" />
+			<date key="time:timestamp" value="2026-01-23T09:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Collect customer information" />
+			<date key="time:timestamp" value="2026-01-23T09:25:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Address customer concerns or questions" />
+			<date key="time:timestamp" value="2026-01-23T09:31:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Guide customer in selecting product/service" />
+			<date key="time:timestamp" value="2026-01-23T10:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Provide quote" />
+			<date key="time:timestamp" value="2026-01-23T10:26:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="23" />
+		<event>
+			<string key="concept:name" value="Receive customer inquiry" />
+			<date key="time:timestamp" value="2026-01-24T09:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Address customer concerns or questions" />
+			<date key="time:timestamp" value="2026-01-24T09:11:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Collect customer information" />
+			<date key="time:timestamp" value="2026-01-24T09:31:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Guide customer in selecting product/service" />
+			<date key="time:timestamp" value="2026-01-24T10:01:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Provide quote" />
+			<date key="time:timestamp" value="2026-01-24T10:11:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Place order" />
+			<date key="time:timestamp" value="2026-01-24T10:16:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Record order in system" />
+			<date key="time:timestamp" value="2026-01-24T10:30:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Send order confirmation to customer" />
+			<date key="time:timestamp" value="2026-01-24T11:00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="24" />
+		<event>
+			<string key="concept:name" value="Receive customer inquiry" />
+			<date key="time:timestamp" value="2026-01-25T09:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Collect customer information" />
+			<date key="time:timestamp" value="2026-01-25T09:25:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Address customer concerns or questions" />
+			<date key="time:timestamp" value="2026-01-25T09:43:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Guide customer in selecting product/service" />
+			<date key="time:timestamp" value="2026-01-25T10:06:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Provide quote" />
+			<date key="time:timestamp" value="2026-01-25T10:18:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Place order" />
+			<date key="time:timestamp" value="2026-01-25T10:34:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Record order in system" />
+			<date key="time:timestamp" value="2026-01-25T10:47:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Send order confirmation to customer" />
+			<date key="time:timestamp" value="2026-01-25T11:14:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="25" />
+		<event>
+			<string key="concept:name" value="Receive customer inquiry" />
+			<date key="time:timestamp" value="2026-01-26T09:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Collect customer information" />
+			<date key="time:timestamp" value="2026-01-26T09:28:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Address customer concerns or questions" />
+			<date key="time:timestamp" value="2026-01-26T09:57:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Guide customer in selecting product/service" />
+			<date key="time:timestamp" value="2026-01-26T10:25:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Provide quote" />
+			<date key="time:timestamp" value="2026-01-26T10:42:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Place order" />
+			<date key="time:timestamp" value="2026-01-26T11:05:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Record order in system" />
+			<date key="time:timestamp" value="2026-01-26T11:22:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Send order confirmation to customer" />
+			<date key="time:timestamp" value="2026-01-26T11:31:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="26" />
+		<event>
+			<string key="concept:name" value="Receive customer inquiry" />
+			<date key="time:timestamp" value="2026-01-27T09:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Address customer concerns or questions" />
+			<date key="time:timestamp" value="2026-01-27T09:25:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Collect customer information" />
+			<date key="time:timestamp" value="2026-01-27T09:42:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="27" />
+		<event>
+			<string key="concept:name" value="Receive customer inquiry" />
+			<date key="time:timestamp" value="2026-01-28T09:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Collect customer information" />
+			<date key="time:timestamp" value="2026-01-28T09:20:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Address customer concerns or questions" />
+			<date key="time:timestamp" value="2026-01-28T09:47:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="28" />
+		<event>
+			<string key="concept:name" value="Receive customer inquiry" />
+			<date key="time:timestamp" value="2026-01-29T09:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Collect customer information" />
+			<date key="time:timestamp" value="2026-01-29T09:25:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Address customer concerns or questions" />
+			<date key="time:timestamp" value="2026-01-29T09:32:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Guide customer in selecting product/service" />
+			<date key="time:timestamp" value="2026-01-29T09:54:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Provide quote" />
+			<date key="time:timestamp" value="2026-01-29T10:12:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Place order" />
+			<date key="time:timestamp" value="2026-01-29T10:18:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Record order in system" />
+			<date key="time:timestamp" value="2026-01-29T10:38:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Send order confirmation to customer" />
+			<date key="time:timestamp" value="2026-01-29T11:03:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="29" />
+		<event>
+			<string key="concept:name" value="Receive customer inquiry" />
+			<date key="time:timestamp" value="2026-01-30T09:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Address customer concerns or questions" />
+			<date key="time:timestamp" value="2026-01-30T09:19:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Collect customer information" />
+			<date key="time:timestamp" value="2026-01-30T09:30:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Guide customer in selecting product/service" />
+			<date key="time:timestamp" value="2026-01-30T09:41:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Provide quote" />
+			<date key="time:timestamp" value="2026-01-30T10:02:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="30" />
+		<event>
+			<string key="concept:name" value="Receive customer inquiry" />
+			<date key="time:timestamp" value="2026-01-31T09:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Address customer concerns or questions" />
+			<date key="time:timestamp" value="2026-01-31T09:11:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Collect customer information" />
+			<date key="time:timestamp" value="2026-01-31T09:17:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Guide customer in selecting product/service" />
+			<date key="time:timestamp" value="2026-01-31T09:36:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Provide quote" />
+			<date key="time:timestamp" value="2026-01-31T09:59:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Place order" />
+			<date key="time:timestamp" value="2026-01-31T10:25:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Record order in system" />
+			<date key="time:timestamp" value="2026-01-31T10:47:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Send order confirmation to customer" />
+			<date key="time:timestamp" value="2026-01-31T11:06:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="31" />
+		<event>
+			<string key="concept:name" value="Receive customer inquiry" />
+			<date key="time:timestamp" value="2026-02-01T09:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Collect customer information" />
+			<date key="time:timestamp" value="2026-02-01T09:30:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Address customer concerns or questions" />
+			<date key="time:timestamp" value="2026-02-01T10:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Guide customer in selecting product/service" />
+			<date key="time:timestamp" value="2026-02-01T10:25:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Provide quote" />
+			<date key="time:timestamp" value="2026-02-01T10:49:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="32" />
+		<event>
+			<string key="concept:name" value="Receive customer inquiry" />
+			<date key="time:timestamp" value="2026-02-02T09:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Address customer concerns or questions" />
+			<date key="time:timestamp" value="2026-02-02T09:25:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Collect customer information" />
+			<date key="time:timestamp" value="2026-02-02T09:52:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="33" />
+		<event>
+			<string key="concept:name" value="Receive customer inquiry" />
+			<date key="time:timestamp" value="2026-02-03T09:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Collect customer information" />
+			<date key="time:timestamp" value="2026-02-03T09:14:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Address customer concerns or questions" />
+			<date key="time:timestamp" value="2026-02-03T09:44:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="34" />
+		<event>
+			<string key="concept:name" value="Receive customer inquiry" />
+			<date key="time:timestamp" value="2026-02-04T09:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Address customer concerns or questions" />
+			<date key="time:timestamp" value="2026-02-04T09:14:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Collect customer information" />
+			<date key="time:timestamp" value="2026-02-04T09:20:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="35" />
+		<event>
+			<string key="concept:name" value="Receive customer inquiry" />
+			<date key="time:timestamp" value="2026-02-05T09:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Collect customer information" />
+			<date key="time:timestamp" value="2026-02-05T09:06:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Address customer concerns or questions" />
+			<date key="time:timestamp" value="2026-02-05T09:15:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Guide customer in selecting product/service" />
+			<date key="time:timestamp" value="2026-02-05T09:22:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Provide quote" />
+			<date key="time:timestamp" value="2026-02-05T09:41:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="36" />
+		<event>
+			<string key="concept:name" value="Receive customer inquiry" />
+			<date key="time:timestamp" value="2026-02-06T09:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Collect customer information" />
+			<date key="time:timestamp" value="2026-02-06T09:17:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Address customer concerns or questions" />
+			<date key="time:timestamp" value="2026-02-06T09:35:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Guide customer in selecting product/service" />
+			<date key="time:timestamp" value="2026-02-06T10:05:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Provide quote" />
+			<date key="time:timestamp" value="2026-02-06T10:29:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Place order" />
+			<date key="time:timestamp" value="2026-02-06T10:44:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Record order in system" />
+			<date key="time:timestamp" value="2026-02-06T11:02:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Send order confirmation to customer" />
+			<date key="time:timestamp" value="2026-02-06T11:15:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="37" />
+		<event>
+			<string key="concept:name" value="Receive customer inquiry" />
+			<date key="time:timestamp" value="2026-02-07T09:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Collect customer information" />
+			<date key="time:timestamp" value="2026-02-07T09:24:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Address customer concerns or questions" />
+			<date key="time:timestamp" value="2026-02-07T09:51:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Guide customer in selecting product/service" />
+			<date key="time:timestamp" value="2026-02-07T10:17:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Provide quote" />
+			<date key="time:timestamp" value="2026-02-07T10:33:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="38" />
+		<event>
+			<string key="concept:name" value="Receive customer inquiry" />
+			<date key="time:timestamp" value="2026-02-08T09:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Address customer concerns or questions" />
+			<date key="time:timestamp" value="2026-02-08T09:28:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Collect customer information" />
+			<date key="time:timestamp" value="2026-02-08T09:57:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Guide customer in selecting product/service" />
+			<date key="time:timestamp" value="2026-02-08T10:03:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Provide quote" />
+			<date key="time:timestamp" value="2026-02-08T10:19:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="39" />
+		<event>
+			<string key="concept:name" value="Receive customer inquiry" />
+			<date key="time:timestamp" value="2026-02-09T09:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Collect customer information" />
+			<date key="time:timestamp" value="2026-02-09T09:18:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Address customer concerns or questions" />
+			<date key="time:timestamp" value="2026-02-09T09:44:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="40" />
+		<event>
+			<string key="concept:name" value="Receive customer inquiry" />
+			<date key="time:timestamp" value="2026-02-10T09:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Address customer concerns or questions" />
+			<date key="time:timestamp" value="2026-02-10T09:13:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Collect customer information" />
+			<date key="time:timestamp" value="2026-02-10T09:31:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="41" />
+		<event>
+			<string key="concept:name" value="Receive customer inquiry" />
+			<date key="time:timestamp" value="2026-02-11T09:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Collect customer information" />
+			<date key="time:timestamp" value="2026-02-11T09:23:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Address customer concerns or questions" />
+			<date key="time:timestamp" value="2026-02-11T09:49:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="42" />
+		<event>
+			<string key="concept:name" value="Receive customer inquiry" />
+			<date key="time:timestamp" value="2026-02-12T09:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Collect customer information" />
+			<date key="time:timestamp" value="2026-02-12T09:09:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Address customer concerns or questions" />
+			<date key="time:timestamp" value="2026-02-12T09:21:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Guide customer in selecting product/service" />
+			<date key="time:timestamp" value="2026-02-12T09:45:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Provide quote" />
+			<date key="time:timestamp" value="2026-02-12T10:05:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="43" />
+		<event>
+			<string key="concept:name" value="Receive customer inquiry" />
+			<date key="time:timestamp" value="2026-02-13T09:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Collect customer information" />
+			<date key="time:timestamp" value="2026-02-13T09:16:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Address customer concerns or questions" />
+			<date key="time:timestamp" value="2026-02-13T09:36:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Guide customer in selecting product/service" />
+			<date key="time:timestamp" value="2026-02-13T10:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Provide quote" />
+			<date key="time:timestamp" value="2026-02-13T10:24:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="44" />
+		<event>
+			<string key="concept:name" value="Receive customer inquiry" />
+			<date key="time:timestamp" value="2026-02-14T09:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Address customer concerns or questions" />
+			<date key="time:timestamp" value="2026-02-14T09:09:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Collect customer information" />
+			<date key="time:timestamp" value="2026-02-14T09:30:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Guide customer in selecting product/service" />
+			<date key="time:timestamp" value="2026-02-14T09:36:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Provide quote" />
+			<date key="time:timestamp" value="2026-02-14T09:58:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Place order" />
+			<date key="time:timestamp" value="2026-02-14T10:03:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Record order in system" />
+			<date key="time:timestamp" value="2026-02-14T10:21:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Send order confirmation to customer" />
+			<date key="time:timestamp" value="2026-02-14T10:49:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="45" />
+		<event>
+			<string key="concept:name" value="Receive customer inquiry" />
+			<date key="time:timestamp" value="2026-02-15T09:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Address customer concerns or questions" />
+			<date key="time:timestamp" value="2026-02-15T09:22:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Collect customer information" />
+			<date key="time:timestamp" value="2026-02-15T09:52:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="46" />
+		<event>
+			<string key="concept:name" value="Receive customer inquiry" />
+			<date key="time:timestamp" value="2026-02-16T09:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Address customer concerns or questions" />
+			<date key="time:timestamp" value="2026-02-16T09:09:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Collect customer information" />
+			<date key="time:timestamp" value="2026-02-16T09:15:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="47" />
+		<event>
+			<string key="concept:name" value="Receive customer inquiry" />
+			<date key="time:timestamp" value="2026-02-17T09:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Collect customer information" />
+			<date key="time:timestamp" value="2026-02-17T09:17:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Address customer concerns or questions" />
+			<date key="time:timestamp" value="2026-02-17T09:29:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Guide customer in selecting product/service" />
+			<date key="time:timestamp" value="2026-02-17T09:51:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Provide quote" />
+			<date key="time:timestamp" value="2026-02-17T10:17:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Place order" />
+			<date key="time:timestamp" value="2026-02-17T10:27:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Record order in system" />
+			<date key="time:timestamp" value="2026-02-17T10:45:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Send order confirmation to customer" />
+			<date key="time:timestamp" value="2026-02-17T11:06:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="48" />
+		<event>
+			<string key="concept:name" value="Receive customer inquiry" />
+			<date key="time:timestamp" value="2026-02-18T09:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Collect customer information" />
+			<date key="time:timestamp" value="2026-02-18T09:17:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Address customer concerns or questions" />
+			<date key="time:timestamp" value="2026-02-18T09:24:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Guide customer in selecting product/service" />
+			<date key="time:timestamp" value="2026-02-18T09:34:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Provide quote" />
+			<date key="time:timestamp" value="2026-02-18T10:01:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Place order" />
+			<date key="time:timestamp" value="2026-02-18T10:31:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Record order in system" />
+			<date key="time:timestamp" value="2026-02-18T10:44:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Send order confirmation to customer" />
+			<date key="time:timestamp" value="2026-02-18T11:08:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="49" />
+		<event>
+			<string key="concept:name" value="Receive customer inquiry" />
+			<date key="time:timestamp" value="2026-02-19T09:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Collect customer information" />
+			<date key="time:timestamp" value="2026-02-19T09:11:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Address customer concerns or questions" />
+			<date key="time:timestamp" value="2026-02-19T09:18:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="50" />
+		<event>
+			<string key="concept:name" value="Receive customer inquiry" />
+			<date key="time:timestamp" value="2026-02-20T09:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Address customer concerns or questions" />
+			<date key="time:timestamp" value="2026-02-20T09:19:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Collect customer information" />
+			<date key="time:timestamp" value="2026-02-20T09:37:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Guide customer in selecting product/service" />
+			<date key="time:timestamp" value="2026-02-20T10:02:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Provide quote" />
+			<date key="time:timestamp" value="2026-02-20T10:17:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Place order" />
+			<date key="time:timestamp" value="2026-02-20T10:22:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Record order in system" />
+			<date key="time:timestamp" value="2026-02-20T10:52:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Send order confirmation to customer" />
+			<date key="time:timestamp" value="2026-02-20T11:15:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="51" />
+		<event>
+			<string key="concept:name" value="Receive customer inquiry" />
+			<date key="time:timestamp" value="2026-02-21T09:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Address customer concerns or questions" />
+			<date key="time:timestamp" value="2026-02-21T09:08:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Collect customer information" />
+			<date key="time:timestamp" value="2026-02-21T09:18:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="52" />
+		<event>
+			<string key="concept:name" value="Receive customer inquiry" />
+			<date key="time:timestamp" value="2026-02-22T09:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Address customer concerns or questions" />
+			<date key="time:timestamp" value="2026-02-22T09:25:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Collect customer information" />
+			<date key="time:timestamp" value="2026-02-22T09:41:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Guide customer in selecting product/service" />
+			<date key="time:timestamp" value="2026-02-22T10:11:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Provide quote" />
+			<date key="time:timestamp" value="2026-02-22T10:26:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Place order" />
+			<date key="time:timestamp" value="2026-02-22T10:50:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Record order in system" />
+			<date key="time:timestamp" value="2026-02-22T11:18:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Send order confirmation to customer" />
+			<date key="time:timestamp" value="2026-02-22T11:28:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="53" />
+		<event>
+			<string key="concept:name" value="Receive customer inquiry" />
+			<date key="time:timestamp" value="2026-02-23T09:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Address customer concerns or questions" />
+			<date key="time:timestamp" value="2026-02-23T09:16:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Collect customer information" />
+			<date key="time:timestamp" value="2026-02-23T09:37:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="54" />
+		<event>
+			<string key="concept:name" value="Receive customer inquiry" />
+			<date key="time:timestamp" value="2026-02-24T09:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Collect customer information" />
+			<date key="time:timestamp" value="2026-02-24T09:24:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Address customer concerns or questions" />
+			<date key="time:timestamp" value="2026-02-24T09:53:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="55" />
+		<event>
+			<string key="concept:name" value="Receive customer inquiry" />
+			<date key="time:timestamp" value="2026-02-25T09:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Collect customer information" />
+			<date key="time:timestamp" value="2026-02-25T09:08:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Address customer concerns or questions" />
+			<date key="time:timestamp" value="2026-02-25T09:14:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Guide customer in selecting product/service" />
+			<date key="time:timestamp" value="2026-02-25T09:42:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Provide quote" />
+			<date key="time:timestamp" value="2026-02-25T10:00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="56" />
+		<event>
+			<string key="concept:name" value="Receive customer inquiry" />
+			<date key="time:timestamp" value="2026-02-26T09:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Address customer concerns or questions" />
+			<date key="time:timestamp" value="2026-02-26T09:22:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Collect customer information" />
+			<date key="time:timestamp" value="2026-02-26T09:47:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="57" />
+		<event>
+			<string key="concept:name" value="Receive customer inquiry" />
+			<date key="time:timestamp" value="2026-02-27T09:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Collect customer information" />
+			<date key="time:timestamp" value="2026-02-27T09:14:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Address customer concerns or questions" />
+			<date key="time:timestamp" value="2026-02-27T09:26:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="58" />
+		<event>
+			<string key="concept:name" value="Receive customer inquiry" />
+			<date key="time:timestamp" value="2026-02-28T09:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Collect customer information" />
+			<date key="time:timestamp" value="2026-02-28T09:11:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Address customer concerns or questions" />
+			<date key="time:timestamp" value="2026-02-28T09:34:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="59" />
+		<event>
+			<string key="concept:name" value="Receive customer inquiry" />
+			<date key="time:timestamp" value="2026-03-01T09:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Address customer concerns or questions" />
+			<date key="time:timestamp" value="2026-03-01T09:27:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Collect customer information" />
+			<date key="time:timestamp" value="2026-03-01T09:39:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="60" />
+		<event>
+			<string key="concept:name" value="Receive customer inquiry" />
+			<date key="time:timestamp" value="2026-03-02T09:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Collect customer information" />
+			<date key="time:timestamp" value="2026-03-02T09:11:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Address customer concerns or questions" />
+			<date key="time:timestamp" value="2026-03-02T09:39:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="61" />
+		<event>
+			<string key="concept:name" value="Receive customer inquiry" />
+			<date key="time:timestamp" value="2026-03-03T09:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Address customer concerns or questions" />
+			<date key="time:timestamp" value="2026-03-03T09:09:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Collect customer information" />
+			<date key="time:timestamp" value="2026-03-03T09:38:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Guide customer in selecting product/service" />
+			<date key="time:timestamp" value="2026-03-03T09:45:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Provide quote" />
+			<date key="time:timestamp" value="2026-03-03T10:15:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="62" />
+		<event>
+			<string key="concept:name" value="Receive customer inquiry" />
+			<date key="time:timestamp" value="2026-03-04T09:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Collect customer information" />
+			<date key="time:timestamp" value="2026-03-04T09:15:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Address customer concerns or questions" />
+			<date key="time:timestamp" value="2026-03-04T09:39:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Guide customer in selecting product/service" />
+			<date key="time:timestamp" value="2026-03-04T10:06:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Provide quote" />
+			<date key="time:timestamp" value="2026-03-04T10:15:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Place order" />
+			<date key="time:timestamp" value="2026-03-04T10:27:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Record order in system" />
+			<date key="time:timestamp" value="2026-03-04T10:57:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Send order confirmation to customer" />
+			<date key="time:timestamp" value="2026-03-04T11:06:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="63" />
+		<event>
+			<string key="concept:name" value="Receive customer inquiry" />
+			<date key="time:timestamp" value="2026-03-05T09:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Address customer concerns or questions" />
+			<date key="time:timestamp" value="2026-03-05T09:08:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Collect customer information" />
+			<date key="time:timestamp" value="2026-03-05T09:16:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Guide customer in selecting product/service" />
+			<date key="time:timestamp" value="2026-03-05T09:21:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Provide quote" />
+			<date key="time:timestamp" value="2026-03-05T09:35:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Place order" />
+			<date key="time:timestamp" value="2026-03-05T09:49:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Record order in system" />
+			<date key="time:timestamp" value="2026-03-05T10:17:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Send order confirmation to customer" />
+			<date key="time:timestamp" value="2026-03-05T10:32:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="64" />
+		<event>
+			<string key="concept:name" value="Receive customer inquiry" />
+			<date key="time:timestamp" value="2026-03-06T09:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Address customer concerns or questions" />
+			<date key="time:timestamp" value="2026-03-06T09:29:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Collect customer information" />
+			<date key="time:timestamp" value="2026-03-06T09:41:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="65" />
+		<event>
+			<string key="concept:name" value="Receive customer inquiry" />
+			<date key="time:timestamp" value="2026-03-07T09:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Collect customer information" />
+			<date key="time:timestamp" value="2026-03-07T09:11:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Address customer concerns or questions" />
+			<date key="time:timestamp" value="2026-03-07T09:18:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="66" />
+		<event>
+			<string key="concept:name" value="Receive customer inquiry" />
+			<date key="time:timestamp" value="2026-03-08T09:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Collect customer information" />
+			<date key="time:timestamp" value="2026-03-08T09:28:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Address customer concerns or questions" />
+			<date key="time:timestamp" value="2026-03-08T09:37:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="67" />
+		<event>
+			<string key="concept:name" value="Receive customer inquiry" />
+			<date key="time:timestamp" value="2026-03-09T09:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Address customer concerns or questions" />
+			<date key="time:timestamp" value="2026-03-09T09:10:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Collect customer information" />
+			<date key="time:timestamp" value="2026-03-09T09:20:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="68" />
+		<event>
+			<string key="concept:name" value="Receive customer inquiry" />
+			<date key="time:timestamp" value="2026-03-10T09:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Address customer concerns or questions" />
+			<date key="time:timestamp" value="2026-03-10T09:26:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Collect customer information" />
+			<date key="time:timestamp" value="2026-03-10T09:55:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="69" />
+		<event>
+			<string key="concept:name" value="Receive customer inquiry" />
+			<date key="time:timestamp" value="2026-03-11T09:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Address customer concerns or questions" />
+			<date key="time:timestamp" value="2026-03-11T09:05:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Collect customer information" />
+			<date key="time:timestamp" value="2026-03-11T09:21:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="70" />
+		<event>
+			<string key="concept:name" value="Receive customer inquiry" />
+			<date key="time:timestamp" value="2026-03-12T09:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Address customer concerns or questions" />
+			<date key="time:timestamp" value="2026-03-12T09:25:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Collect customer information" />
+			<date key="time:timestamp" value="2026-03-12T09:50:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="71" />
+		<event>
+			<string key="concept:name" value="Receive customer inquiry" />
+			<date key="time:timestamp" value="2026-03-13T09:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Collect customer information" />
+			<date key="time:timestamp" value="2026-03-13T09:07:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Address customer concerns or questions" />
+			<date key="time:timestamp" value="2026-03-13T09:36:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Guide customer in selecting product/service" />
+			<date key="time:timestamp" value="2026-03-13T10:03:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Provide quote" />
+			<date key="time:timestamp" value="2026-03-13T10:16:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="72" />
+		<event>
+			<string key="concept:name" value="Receive customer inquiry" />
+			<date key="time:timestamp" value="2026-03-14T09:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Address customer concerns or questions" />
+			<date key="time:timestamp" value="2026-03-14T09:22:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Collect customer information" />
+			<date key="time:timestamp" value="2026-03-14T09:48:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Guide customer in selecting product/service" />
+			<date key="time:timestamp" value="2026-03-14T10:11:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Provide quote" />
+			<date key="time:timestamp" value="2026-03-14T10:21:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="73" />
+		<event>
+			<string key="concept:name" value="Receive customer inquiry" />
+			<date key="time:timestamp" value="2026-03-15T09:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Address customer concerns or questions" />
+			<date key="time:timestamp" value="2026-03-15T09:17:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Collect customer information" />
+			<date key="time:timestamp" value="2026-03-15T09:28:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Guide customer in selecting product/service" />
+			<date key="time:timestamp" value="2026-03-15T09:36:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Provide quote" />
+			<date key="time:timestamp" value="2026-03-15T09:41:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="74" />
+		<event>
+			<string key="concept:name" value="Receive customer inquiry" />
+			<date key="time:timestamp" value="2026-03-16T09:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Collect customer information" />
+			<date key="time:timestamp" value="2026-03-16T09:06:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Address customer concerns or questions" />
+			<date key="time:timestamp" value="2026-03-16T09:11:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Guide customer in selecting product/service" />
+			<date key="time:timestamp" value="2026-03-16T09:36:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Provide quote" />
+			<date key="time:timestamp" value="2026-03-16T10:00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="75" />
+		<event>
+			<string key="concept:name" value="Receive customer inquiry" />
+			<date key="time:timestamp" value="2026-03-17T09:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Address customer concerns or questions" />
+			<date key="time:timestamp" value="2026-03-17T09:28:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Collect customer information" />
+			<date key="time:timestamp" value="2026-03-17T09:39:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="76" />
+		<event>
+			<string key="concept:name" value="Receive customer inquiry" />
+			<date key="time:timestamp" value="2026-03-18T09:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Address customer concerns or questions" />
+			<date key="time:timestamp" value="2026-03-18T09:15:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Collect customer information" />
+			<date key="time:timestamp" value="2026-03-18T09:26:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Guide customer in selecting product/service" />
+			<date key="time:timestamp" value="2026-03-18T09:37:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Provide quote" />
+			<date key="time:timestamp" value="2026-03-18T09:56:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Place order" />
+			<date key="time:timestamp" value="2026-03-18T10:25:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Record order in system" />
+			<date key="time:timestamp" value="2026-03-18T10:37:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Send order confirmation to customer" />
+			<date key="time:timestamp" value="2026-03-18T11:00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="77" />
+		<event>
+			<string key="concept:name" value="Receive customer inquiry" />
+			<date key="time:timestamp" value="2026-03-19T09:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Collect customer information" />
+			<date key="time:timestamp" value="2026-03-19T09:12:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Address customer concerns or questions" />
+			<date key="time:timestamp" value="2026-03-19T09:26:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="78" />
+		<event>
+			<string key="concept:name" value="Receive customer inquiry" />
+			<date key="time:timestamp" value="2026-03-20T09:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Collect customer information" />
+			<date key="time:timestamp" value="2026-03-20T09:09:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Address customer concerns or questions" />
+			<date key="time:timestamp" value="2026-03-20T09:30:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="79" />
+		<event>
+			<string key="concept:name" value="Receive customer inquiry" />
+			<date key="time:timestamp" value="2026-03-21T09:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Address customer concerns or questions" />
+			<date key="time:timestamp" value="2026-03-21T09:17:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Collect customer information" />
+			<date key="time:timestamp" value="2026-03-21T09:35:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Guide customer in selecting product/service" />
+			<date key="time:timestamp" value="2026-03-21T09:49:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Provide quote" />
+			<date key="time:timestamp" value="2026-03-21T09:55:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="80" />
+		<event>
+			<string key="concept:name" value="Receive customer inquiry" />
+			<date key="time:timestamp" value="2026-03-22T09:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Address customer concerns or questions" />
+			<date key="time:timestamp" value="2026-03-22T09:15:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Collect customer information" />
+			<date key="time:timestamp" value="2026-03-22T09:26:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="81" />
+		<event>
+			<string key="concept:name" value="Receive customer inquiry" />
+			<date key="time:timestamp" value="2026-03-23T09:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Collect customer information" />
+			<date key="time:timestamp" value="2026-03-23T09:05:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Address customer concerns or questions" />
+			<date key="time:timestamp" value="2026-03-23T09:35:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Guide customer in selecting product/service" />
+			<date key="time:timestamp" value="2026-03-23T09:43:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Provide quote" />
+			<date key="time:timestamp" value="2026-03-23T09:56:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="82" />
+		<event>
+			<string key="concept:name" value="Receive customer inquiry" />
+			<date key="time:timestamp" value="2026-03-24T09:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Collect customer information" />
+			<date key="time:timestamp" value="2026-03-24T09:20:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Address customer concerns or questions" />
+			<date key="time:timestamp" value="2026-03-24T09:40:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Guide customer in selecting product/service" />
+			<date key="time:timestamp" value="2026-03-24T09:56:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Provide quote" />
+			<date key="time:timestamp" value="2026-03-24T10:22:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Place order" />
+			<date key="time:timestamp" value="2026-03-24T10:40:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Record order in system" />
+			<date key="time:timestamp" value="2026-03-24T10:57:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Send order confirmation to customer" />
+			<date key="time:timestamp" value="2026-03-24T11:27:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="83" />
+		<event>
+			<string key="concept:name" value="Receive customer inquiry" />
+			<date key="time:timestamp" value="2026-03-25T09:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Address customer concerns or questions" />
+			<date key="time:timestamp" value="2026-03-25T09:30:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Collect customer information" />
+			<date key="time:timestamp" value="2026-03-25T09:51:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Guide customer in selecting product/service" />
+			<date key="time:timestamp" value="2026-03-25T09:57:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Provide quote" />
+			<date key="time:timestamp" value="2026-03-25T10:02:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Place order" />
+			<date key="time:timestamp" value="2026-03-25T10:31:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Record order in system" />
+			<date key="time:timestamp" value="2026-03-25T10:50:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Send order confirmation to customer" />
+			<date key="time:timestamp" value="2026-03-25T11:20:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="84" />
+		<event>
+			<string key="concept:name" value="Receive customer inquiry" />
+			<date key="time:timestamp" value="2026-03-26T09:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Collect customer information" />
+			<date key="time:timestamp" value="2026-03-26T09:16:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Address customer concerns or questions" />
+			<date key="time:timestamp" value="2026-03-26T09:24:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Guide customer in selecting product/service" />
+			<date key="time:timestamp" value="2026-03-26T09:48:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Provide quote" />
+			<date key="time:timestamp" value="2026-03-26T10:08:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="85" />
+		<event>
+			<string key="concept:name" value="Receive customer inquiry" />
+			<date key="time:timestamp" value="2026-03-27T09:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Collect customer information" />
+			<date key="time:timestamp" value="2026-03-27T09:23:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Address customer concerns or questions" />
+			<date key="time:timestamp" value="2026-03-27T09:48:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="86" />
+		<event>
+			<string key="concept:name" value="Receive customer inquiry" />
+			<date key="time:timestamp" value="2026-03-28T09:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Address customer concerns or questions" />
+			<date key="time:timestamp" value="2026-03-28T09:15:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Collect customer information" />
+			<date key="time:timestamp" value="2026-03-28T09:28:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Guide customer in selecting product/service" />
+			<date key="time:timestamp" value="2026-03-28T09:39:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Provide quote" />
+			<date key="time:timestamp" value="2026-03-28T09:46:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Place order" />
+			<date key="time:timestamp" value="2026-03-28T10:02:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Record order in system" />
+			<date key="time:timestamp" value="2026-03-28T10:11:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Send order confirmation to customer" />
+			<date key="time:timestamp" value="2026-03-28T10:36:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="87" />
+		<event>
+			<string key="concept:name" value="Receive customer inquiry" />
+			<date key="time:timestamp" value="2026-03-29T09:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Collect customer information" />
+			<date key="time:timestamp" value="2026-03-29T09:05:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Address customer concerns or questions" />
+			<date key="time:timestamp" value="2026-03-29T09:25:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Guide customer in selecting product/service" />
+			<date key="time:timestamp" value="2026-03-29T09:30:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Provide quote" />
+			<date key="time:timestamp" value="2026-03-29T09:39:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="88" />
+		<event>
+			<string key="concept:name" value="Receive customer inquiry" />
+			<date key="time:timestamp" value="2026-03-30T09:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Address customer concerns or questions" />
+			<date key="time:timestamp" value="2026-03-30T09:09:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Collect customer information" />
+			<date key="time:timestamp" value="2026-03-30T09:18:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="89" />
+		<event>
+			<string key="concept:name" value="Receive customer inquiry" />
+			<date key="time:timestamp" value="2026-03-31T09:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Address customer concerns or questions" />
+			<date key="time:timestamp" value="2026-03-31T09:09:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Collect customer information" />
+			<date key="time:timestamp" value="2026-03-31T09:30:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="90" />
+		<event>
+			<string key="concept:name" value="Receive customer inquiry" />
+			<date key="time:timestamp" value="2026-04-01T09:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Address customer concerns or questions" />
+			<date key="time:timestamp" value="2026-04-01T09:28:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Collect customer information" />
+			<date key="time:timestamp" value="2026-04-01T09:42:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Guide customer in selecting product/service" />
+			<date key="time:timestamp" value="2026-04-01T10:09:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Provide quote" />
+			<date key="time:timestamp" value="2026-04-01T10:29:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Place order" />
+			<date key="time:timestamp" value="2026-04-01T10:43:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Record order in system" />
+			<date key="time:timestamp" value="2026-04-01T11:12:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Send order confirmation to customer" />
+			<date key="time:timestamp" value="2026-04-01T11:33:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="91" />
+		<event>
+			<string key="concept:name" value="Receive customer inquiry" />
+			<date key="time:timestamp" value="2026-04-02T09:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Collect customer information" />
+			<date key="time:timestamp" value="2026-04-02T09:25:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Address customer concerns or questions" />
+			<date key="time:timestamp" value="2026-04-02T09:43:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Guide customer in selecting product/service" />
+			<date key="time:timestamp" value="2026-04-02T09:54:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Provide quote" />
+			<date key="time:timestamp" value="2026-04-02T10:22:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Place order" />
+			<date key="time:timestamp" value="2026-04-02T10:38:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Record order in system" />
+			<date key="time:timestamp" value="2026-04-02T10:51:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Send order confirmation to customer" />
+			<date key="time:timestamp" value="2026-04-02T11:14:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="92" />
+		<event>
+			<string key="concept:name" value="Receive customer inquiry" />
+			<date key="time:timestamp" value="2026-04-03T09:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Collect customer information" />
+			<date key="time:timestamp" value="2026-04-03T09:06:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Address customer concerns or questions" />
+			<date key="time:timestamp" value="2026-04-03T09:19:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="93" />
+		<event>
+			<string key="concept:name" value="Receive customer inquiry" />
+			<date key="time:timestamp" value="2026-04-04T09:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Collect customer information" />
+			<date key="time:timestamp" value="2026-04-04T09:12:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Address customer concerns or questions" />
+			<date key="time:timestamp" value="2026-04-04T09:28:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Guide customer in selecting product/service" />
+			<date key="time:timestamp" value="2026-04-04T09:51:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Provide quote" />
+			<date key="time:timestamp" value="2026-04-04T10:17:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Place order" />
+			<date key="time:timestamp" value="2026-04-04T10:27:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Record order in system" />
+			<date key="time:timestamp" value="2026-04-04T10:54:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Send order confirmation to customer" />
+			<date key="time:timestamp" value="2026-04-04T11:13:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="94" />
+		<event>
+			<string key="concept:name" value="Receive customer inquiry" />
+			<date key="time:timestamp" value="2026-04-05T09:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Collect customer information" />
+			<date key="time:timestamp" value="2026-04-05T09:23:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Address customer concerns or questions" />
+			<date key="time:timestamp" value="2026-04-05T09:43:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="95" />
+		<event>
+			<string key="concept:name" value="Receive customer inquiry" />
+			<date key="time:timestamp" value="2026-04-06T09:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Address customer concerns or questions" />
+			<date key="time:timestamp" value="2026-04-06T09:18:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Collect customer information" />
+			<date key="time:timestamp" value="2026-04-06T09:39:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Guide customer in selecting product/service" />
+			<date key="time:timestamp" value="2026-04-06T10:04:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Provide quote" />
+			<date key="time:timestamp" value="2026-04-06T10:10:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Place order" />
+			<date key="time:timestamp" value="2026-04-06T10:34:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Record order in system" />
+			<date key="time:timestamp" value="2026-04-06T10:56:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Send order confirmation to customer" />
+			<date key="time:timestamp" value="2026-04-06T11:07:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="96" />
+		<event>
+			<string key="concept:name" value="Receive customer inquiry" />
+			<date key="time:timestamp" value="2026-04-07T09:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Address customer concerns or questions" />
+			<date key="time:timestamp" value="2026-04-07T09:07:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Collect customer information" />
+			<date key="time:timestamp" value="2026-04-07T09:17:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="97" />
+		<event>
+			<string key="concept:name" value="Receive customer inquiry" />
+			<date key="time:timestamp" value="2026-04-08T09:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Collect customer information" />
+			<date key="time:timestamp" value="2026-04-08T09:24:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Address customer concerns or questions" />
+			<date key="time:timestamp" value="2026-04-08T09:32:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Guide customer in selecting product/service" />
+			<date key="time:timestamp" value="2026-04-08T09:40:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Provide quote" />
+			<date key="time:timestamp" value="2026-04-08T10:03:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Place order" />
+			<date key="time:timestamp" value="2026-04-08T10:19:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Record order in system" />
+			<date key="time:timestamp" value="2026-04-08T10:48:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Send order confirmation to customer" />
+			<date key="time:timestamp" value="2026-04-08T11:04:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="98" />
+		<event>
+			<string key="concept:name" value="Receive customer inquiry" />
+			<date key="time:timestamp" value="2026-04-09T09:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Collect customer information" />
+			<date key="time:timestamp" value="2026-04-09T09:16:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Address customer concerns or questions" />
+			<date key="time:timestamp" value="2026-04-09T09:29:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="99" />
+		<event>
+			<string key="concept:name" value="Receive customer inquiry" />
+			<date key="time:timestamp" value="2026-04-10T09:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Collect customer information" />
+			<date key="time:timestamp" value="2026-04-10T09:23:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Address customer concerns or questions" />
+			<date key="time:timestamp" value="2026-04-10T09:30:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Guide customer in selecting product/service" />
+			<date key="time:timestamp" value="2026-04-10T10:00:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Provide quote" />
+			<date key="time:timestamp" value="2026-04-10T10:16:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Place order" />
+			<date key="time:timestamp" value="2026-04-10T10:32:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Record order in system" />
+			<date key="time:timestamp" value="2026-04-10T10:49:00" />
+		</event>
+		<event>
+			<string key="concept:name" value="Send order confirmation to customer" />
+			<date key="time:timestamp" value="2026-04-10T11:04:00" />
+		</event>
+	</trace>
+</log>

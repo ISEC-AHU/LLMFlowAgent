@@ -1,0 +1,394 @@
+[
+  {
+    "id": "Address customer concerns or questions",
+    "desc": "Addresses customer concerns or questions during the business process.",
+    "input_type": ["customer_inquiry"],
+    "output_type": ["customer_response"],
+    "metadata_for_embedding": "Tool ID: Address customer concerns or questions. Function: Addresses customer concerns or questions during the business process. Input Requirements: customer_inquiry. Output Modality: customer_response."
+  },
+  {
+    "id": "Analyze performance for future optimization",
+    "desc": "Analyzes process or campaign performance to support future optimization.",
+    "input_type": ["performance_data"],
+    "output_type": ["optimization_insight"],
+    "metadata_for_embedding": "Tool ID: Analyze performance for future optimization. Function: Analyzes process or campaign performance to support future optimization. Input Requirements: performance_data. Output Modality: optimization_insight."
+  },
+  {
+    "id": "Begin contract negotiations",
+    "desc": "Begins negotiation activities for reaching a contract agreement.",
+    "input_type": ["proposal"],
+    "output_type": ["negotiation_process"],
+    "metadata_for_embedding": "Tool ID: Begin contract negotiations. Function: Begins negotiation activities for reaching a contract agreement. Input Requirements: proposal. Output Modality: negotiation_process."
+  },
+  {
+    "id": "Begin onboarding process",
+    "desc": "Starts the onboarding process for a selected person or organization.",
+    "input_type": ["selected_entity"],
+    "output_type": ["onboarding_process"],
+    "metadata_for_embedding": "Tool ID: Begin onboarding process. Function: Starts the onboarding process for a selected person or organization. Input Requirements: selected_entity. Output Modality: onboarding_process."
+  },
+  {
+    "id": "Campaign period ends",
+    "desc": "Marks the end of a campaign period.",
+    "input_type": ["campaign_status"],
+    "output_type": ["campaign_completion"],
+    "metadata_for_embedding": "Tool ID: Campaign period ends. Function: Marks the end of a campaign period. Input Requirements: campaign_status. Output Modality: campaign_completion."
+  },
+  {
+    "id": "Check current inventory level",
+    "desc": "Checks the current inventory level of available stock.",
+    "input_type": ["inventory_record"],
+    "output_type": ["inventory_level"],
+    "metadata_for_embedding": "Tool ID: Check current inventory level. Function: Checks the current inventory level of available stock. Input Requirements: inventory_record. Output Modality: inventory_level."
+  },
+  {
+    "id": "Choose candidate",
+    "desc": "Chooses a candidate based on the available evaluation information.",
+    "input_type": ["candidate_evaluation"],
+    "output_type": ["selected_candidate"],
+    "metadata_for_embedding": "Tool ID: Choose candidate. Function: Chooses a candidate based on the available evaluation information. Input Requirements: candidate_evaluation. Output Modality: selected_candidate."
+  },
+  {
+    "id": "Collect customer information",
+    "desc": "Collects relevant information from a customer for subsequent business activities.",
+    "input_type": ["customer"],
+    "output_type": ["customer_information"],
+    "metadata_for_embedding": "Tool ID: Collect customer information. Function: Collects relevant information from a customer for subsequent business activities. Input Requirements: customer. Output Modality: customer_information."
+  },
+  {
+    "id": "Collect leads in CRM system",
+    "desc": "Collects sales or marketing leads in a CRM system.",
+    "input_type": ["lead_source"],
+    "output_type": ["crm_leads"],
+    "metadata_for_embedding": "Tool ID: Collect leads in CRM system. Function: Collects sales or marketing leads in a CRM system. Input Requirements: lead_source. Output Modality: crm_leads."
+  },
+  {
+    "id": "Collect resumes",
+    "desc": "Collects resumes from candidates for the recruitment process.",
+    "input_type": ["candidate_application"],
+    "output_type": ["resume_collection"],
+    "metadata_for_embedding": "Tool ID: Collect resumes. Function: Collects resumes from candidates for the recruitment process. Input Requirements: candidate_application. Output Modality: resume_collection."
+  },
+  {
+    "id": "Complete orientation",
+    "desc": "Completes an orientation activity as part of an onboarding process.",
+    "input_type": ["onboarding_participant"],
+    "output_type": ["orientation_completion"],
+    "metadata_for_embedding": "Tool ID: Complete orientation. Function: Completes an orientation activity as part of an onboarding process. Input Requirements: onboarding_participant. Output Modality: orientation_completion."
+  },
+  {
+    "id": "Complete paperwork",
+    "desc": "Completes required paperwork for the business process.",
+    "input_type": ["required_information"],
+    "output_type": ["completed_documents"],
+    "metadata_for_embedding": "Tool ID: Complete paperwork. Function: Completes required paperwork for the business process. Input Requirements: required_information. Output Modality: completed_documents."
+  },
+  {
+    "id": "Complete training",
+    "desc": "Completes a required training activity.",
+    "input_type": ["training_material"],
+    "output_type": ["training_completion"],
+    "metadata_for_embedding": "Tool ID: Complete training. Function: Completes a required training activity. Input Requirements: training_material. Output Modality: training_completion."
+  },
+  {
+    "id": "Conduct a virtual interview",
+    "desc": "Conducts an interview with a candidate through a virtual format.",
+    "input_type": ["candidate_profile"],
+    "output_type": ["interview_result"],
+    "metadata_for_embedding": "Tool ID: Conduct a virtual interview. Function: Conducts an interview with a candidate through a virtual format. Input Requirements: candidate_profile. Output Modality: interview_result."
+  },
+  {
+    "id": "Conduct an in-person interview",
+    "desc": "Conducts an interview with a candidate in person.",
+    "input_type": ["candidate_profile"],
+    "output_type": ["interview_result"],
+    "metadata_for_embedding": "Tool ID: Conduct an in-person interview. Function: Conducts an interview with a candidate in person. Input Requirements: candidate_profile. Output Modality: interview_result."
+  },
+  {
+    "id": "Conduct initial phone interviews",
+    "desc": "Conducts initial phone interviews with candidates.",
+    "input_type": ["candidate_profile"],
+    "output_type": ["phone_interview_result"],
+    "metadata_for_embedding": "Tool ID: Conduct initial phone interviews. Function: Conducts initial phone interviews with candidates. Input Requirements: candidate_profile. Output Modality: phone_interview_result."
+  },
+  {
+    "id": "Conduct interview",
+    "desc": "Conducts an interview to evaluate a candidate or participant.",
+    "input_type": ["candidate_profile"],
+    "output_type": ["interview_result"],
+    "metadata_for_embedding": "Tool ID: Conduct interview. Function: Conducts an interview to evaluate a candidate or participant. Input Requirements: candidate_profile. Output Modality: interview_result."
+  },
+  {
+    "id": "Conduct site visit",
+    "desc": "Conducts a site visit to gather information or assess suitability.",
+    "input_type": ["site_information"],
+    "output_type": ["site_visit_result"],
+    "metadata_for_embedding": "Tool ID: Conduct site visit. Function: Conducts a site visit to gather information or assess suitability. Input Requirements: site_information. Output Modality: site_visit_result."
+  },
+  {
+    "id": "Create content",
+    "desc": "Creates content for a business or campaign activity.",
+    "input_type": ["content_requirements"],
+    "output_type": ["content"],
+    "metadata_for_embedding": "Tool ID: Create content. Function: Creates content for a business or campaign activity. Input Requirements: content_requirements. Output Modality: content."
+  },
+  {
+    "id": "Create job description",
+    "desc": "Creates a job description for a hiring process.",
+    "input_type": ["hiring_need"],
+    "output_type": ["job_description"],
+    "metadata_for_embedding": "Tool ID: Create job description. Function: Creates a job description for a hiring process. Input Requirements: hiring_need. Output Modality: job_description."
+  },
+  {
+    "id": "Define campaign objectives",
+    "desc": "Defines the objectives of a campaign.",
+    "input_type": ["campaign_requirement"],
+    "output_type": ["campaign_objectives"],
+    "metadata_for_embedding": "Tool ID: Define campaign objectives. Function: Defines the objectives of a campaign. Input Requirements: campaign_requirement. Output Modality: campaign_objectives."
+  },
+  {
+    "id": "Design visuals",
+    "desc": "Designs visual materials for a business or campaign activity.",
+    "input_type": ["visual_requirements"],
+    "output_type": ["visual_material"],
+    "metadata_for_embedding": "Tool ID: Design visuals. Function: Designs visual materials for a business or campaign activity. Input Requirements: visual_requirements. Output Modality: visual_material."
+  },
+  {
+    "id": "Evaluate proposal",
+    "desc": "Evaluates a proposal according to relevant process criteria.",
+    "input_type": ["proposal"],
+    "output_type": ["proposal_evaluation"],
+    "metadata_for_embedding": "Tool ID: Evaluate proposal. Function: Evaluates a proposal according to relevant process criteria. Input Requirements: proposal. Output Modality: proposal_evaluation."
+  },
+  {
+    "id": "Execute contract",
+    "desc": "Executes a contract after the required agreement steps are completed.",
+    "input_type": ["contract"],
+    "output_type": ["executed_contract"],
+    "metadata_for_embedding": "Tool ID: Execute contract. Function: Executes a contract after the required agreement steps are completed. Input Requirements: contract. Output Modality: executed_contract."
+  },
+  {
+    "id": "Extend offer",
+    "desc": "Extends an offer to a selected candidate or party.",
+    "input_type": ["selected_candidate"],
+    "output_type": ["offer"],
+    "metadata_for_embedding": "Tool ID: Extend offer. Function: Extends an offer to a selected candidate or party. Input Requirements: selected_candidate. Output Modality: offer."
+  },
+  {
+    "id": "Guide customer in selecting product/service",
+    "desc": "Guides a customer in selecting a suitable product or service.",
+    "input_type": ["customer_information"],
+    "output_type": ["selected_product_or_service"],
+    "metadata_for_embedding": "Tool ID: Guide customer in selecting product/service. Function: Guides a customer in selecting a suitable product or service. Input Requirements: customer_information. Output Modality: selected_product_or_service."
+  },
+  {
+    "id": "Identify need for new hire",
+    "desc": "Identifies the need to hire a new employee or role.",
+    "input_type": ["business_need"],
+    "output_type": ["hiring_need"],
+    "metadata_for_embedding": "Tool ID: Identify need for new hire. Function: Identifies the need to hire a new employee or role. Input Requirements: business_need. Output Modality: hiring_need."
+  },
+  {
+    "id": "Identify need for new supplier or vendor",
+    "desc": "Identifies the need for a new supplier or vendor.",
+    "input_type": ["business_need"],
+    "output_type": ["supplier_need"],
+    "metadata_for_embedding": "Tool ID: Identify need for new supplier or vendor. Function: Identifies the need for a new supplier or vendor. Input Requirements: business_need. Output Modality: supplier_need."
+  },
+  {
+    "id": "Inspect stock for quality",
+    "desc": "Inspects received or available stock for quality.",
+    "input_type": ["stock"],
+    "output_type": ["quality_inspection_result"],
+    "metadata_for_embedding": "Tool ID: Inspect stock for quality. Function: Inspects received or available stock for quality. Input Requirements: stock. Output Modality: quality_inspection_result."
+  },
+  {
+    "id": "Invite candidates for interviews",
+    "desc": "Invites selected candidates to participate in interviews.",
+    "input_type": ["screened_candidates"],
+    "output_type": ["interview_invitations"],
+    "metadata_for_embedding": "Tool ID: Invite candidates for interviews. Function: Invites selected candidates to participate in interviews. Input Requirements: screened_candidates. Output Modality: interview_invitations."
+  },
+  {
+    "id": "Issue request for proposals (RFP)",
+    "desc": "Issues a request for proposals to potential suppliers or vendors.",
+    "input_type": ["supplier_need"],
+    "output_type": ["request_for_proposals"],
+    "metadata_for_embedding": "Tool ID: Issue request for proposals (RFP). Function: Issues a request for proposals to potential suppliers or vendors. Input Requirements: supplier_need. Output Modality: request_for_proposals."
+  },
+  {
+    "id": "Launch campaign",
+    "desc": "Launches a campaign after preparation activities are completed.",
+    "input_type": ["campaign_material"],
+    "output_type": ["active_campaign"],
+    "metadata_for_embedding": "Tool ID: Launch campaign. Function: Launches a campaign after preparation activities are completed. Input Requirements: campaign_material. Output Modality: active_campaign."
+  },
+  {
+    "id": "Negotiate salary",
+    "desc": "Negotiates salary terms as part of an offer or hiring process.",
+    "input_type": ["offer"],
+    "output_type": ["salary_agreement"],
+    "metadata_for_embedding": "Tool ID: Negotiate salary. Function: Negotiates salary terms as part of an offer or hiring process. Input Requirements: offer. Output Modality: salary_agreement."
+  },
+  {
+    "id": "Onboard supplier",
+    "desc": "Onboards a selected supplier into the business process.",
+    "input_type": ["selected_supplier"],
+    "output_type": ["onboarded_supplier"],
+    "metadata_for_embedding": "Tool ID: Onboard supplier. Function: Onboards a selected supplier into the business process. Input Requirements: selected_supplier. Output Modality: onboarded_supplier."
+  },
+  {
+    "id": "Place order",
+    "desc": "Places an order for a selected product or service.",
+    "input_type": ["selected_product_or_service"],
+    "output_type": ["order"],
+    "metadata_for_embedding": "Tool ID: Place order. Function: Places an order for a selected product or service. Input Requirements: selected_product_or_service. Output Modality: order."
+  },
+  {
+    "id": "Place order with suppliers",
+    "desc": "Places an order with suppliers for required stock or items.",
+    "input_type": ["inventory_requirement"],
+    "output_type": ["supplier_order"],
+    "metadata_for_embedding": "Tool ID: Place order with suppliers. Function: Places an order with suppliers for required stock or items. Input Requirements: inventory_requirement. Output Modality: supplier_order."
+  },
+  {
+    "id": "Place stock in storage",
+    "desc": "Places stock into storage after receiving or processing it.",
+    "input_type": ["stock"],
+    "output_type": ["stored_stock"],
+    "metadata_for_embedding": "Tool ID: Place stock in storage. Function: Places stock into storage after receiving or processing it. Input Requirements: stock. Output Modality: stored_stock."
+  },
+  {
+    "id": "Place stock on shelves",
+    "desc": "Places stock on shelves for availability or display.",
+    "input_type": ["stock"],
+    "output_type": ["shelved_stock"],
+    "metadata_for_embedding": "Tool ID: Place stock on shelves. Function: Places stock on shelves for availability or display. Input Requirements: stock. Output Modality: shelved_stock."
+  },
+  {
+    "id": "Post job description",
+    "desc": "Posts a job description to make the role available to candidates.",
+    "input_type": ["job_description"],
+    "output_type": ["job_posting"],
+    "metadata_for_embedding": "Tool ID: Post job description. Function: Posts a job description to make the role available to candidates. Input Requirements: job_description. Output Modality: job_posting."
+  },
+  {
+    "id": "Provide quote",
+    "desc": "Provides a quote based on customer information or selected requirements.",
+    "input_type": ["customer_information"],
+    "output_type": ["quote"],
+    "metadata_for_embedding": "Tool ID: Provide quote. Function: Provides a quote based on customer information or selected requirements. Input Requirements: customer_information. Output Modality: quote."
+  },
+  {
+    "id": "Receive customer inquiry",
+    "desc": "Receives an inquiry from a customer.",
+    "input_type": ["customer"],
+    "output_type": ["customer_inquiry"],
+    "metadata_for_embedding": "Tool ID: Receive customer inquiry. Function: Receives an inquiry from a customer. Input Requirements: customer. Output Modality: customer_inquiry."
+  },
+  {
+    "id": "Receive stock",
+    "desc": "Receives stock as part of an inventory or supply process.",
+    "input_type": ["supplier_order"],
+    "output_type": ["stock"],
+    "metadata_for_embedding": "Tool ID: Receive stock. Function: Receives stock as part of an inventory or supply process. Input Requirements: supplier_order. Output Modality: stock."
+  },
+  {
+    "id": "Receive supplier proposals",
+    "desc": "Receives proposals submitted by suppliers or vendors.",
+    "input_type": ["request_for_proposals"],
+    "output_type": ["supplier_proposals"],
+    "metadata_for_embedding": "Tool ID: Receive supplier proposals. Function: Receives proposals submitted by suppliers or vendors. Input Requirements: request_for_proposals. Output Modality: supplier_proposals."
+  },
+  {
+    "id": "Record order in system",
+    "desc": "Records an order in the relevant system.",
+    "input_type": ["order"],
+    "output_type": ["order_record"],
+    "metadata_for_embedding": "Tool ID: Record order in system. Function: Records an order in the relevant system. Input Requirements: order. Output Modality: order_record."
+  },
+  {
+    "id": "Record stock in system",
+    "desc": "Records stock information in the relevant system.",
+    "input_type": ["stock"],
+    "output_type": ["stock_record"],
+    "metadata_for_embedding": "Tool ID: Record stock in system. Function: Records stock information in the relevant system. Input Requirements: stock. Output Modality: stock_record."
+  },
+  {
+    "id": "Sales teams follows up on leads",
+    "desc": "Follows up on collected leads through the sales team.",
+    "input_type": ["crm_leads"],
+    "output_type": ["lead_follow_up_result"],
+    "metadata_for_embedding": "Tool ID: Sales teams follows up on leads. Function: Follows up on collected leads through the sales team. Input Requirements: crm_leads. Output Modality: lead_follow_up_result."
+  },
+  {
+    "id": "Screen resumes",
+    "desc": "Screens collected resumes to identify suitable candidates.",
+    "input_type": ["resume_collection"],
+    "output_type": ["screened_candidates"],
+    "metadata_for_embedding": "Tool ID: Screen resumes. Function: Screens collected resumes to identify suitable candidates. Input Requirements: resume_collection. Output Modality: screened_candidates."
+  },
+  {
+    "id": "Select promotion channels",
+    "desc": "Selects suitable promotion channels for a campaign.",
+    "input_type": ["campaign_objectives"],
+    "output_type": ["promotion_channels"],
+    "metadata_for_embedding": "Tool ID: Select promotion channels. Function: Selects suitable promotion channels for a campaign. Input Requirements: campaign_objectives. Output Modality: promotion_channels."
+  },
+  {
+    "id": "Select supplier",
+    "desc": "Selects a supplier based on received proposals and evaluation results.",
+    "input_type": ["proposal_evaluation"],
+    "output_type": ["selected_supplier"],
+    "metadata_for_embedding": "Tool ID: Select supplier. Function: Selects a supplier based on received proposals and evaluation results. Input Requirements: proposal_evaluation. Output Modality: selected_supplier."
+  },
+  {
+    "id": "Send a manual alert",
+    "desc": "Sends a manual alert to communicate important information.",
+    "input_type": ["alert_information"],
+    "output_type": ["manual_alert"],
+    "metadata_for_embedding": "Tool ID: Send a manual alert. Function: Sends a manual alert to communicate important information. Input Requirements: alert_information. Output Modality: manual_alert."
+  },
+  {
+    "id": "Send an automated alert",
+    "desc": "Sends an automated alert based on process information or system conditions.",
+    "input_type": ["alert_information"],
+    "output_type": ["automated_alert"],
+    "metadata_for_embedding": "Tool ID: Send an automated alert. Function: Sends an automated alert based on process information or system conditions. Input Requirements: alert_information. Output Modality: automated_alert."
+  },
+  {
+    "id": "Send order confirmation to customer",
+    "desc": "Sends an order confirmation to the customer.",
+    "input_type": ["order_record"],
+    "output_type": ["order_confirmation"],
+    "metadata_for_embedding": "Tool ID: Send order confirmation to customer. Function: Sends an order confirmation to the customer. Input Requirements: order_record. Output Modality: order_confirmation."
+  },
+  {
+    "id": "Sign contract",
+    "desc": "Signs a contract as part of the agreement process.",
+    "input_type": ["contract"],
+    "output_type": ["signed_contract"],
+    "metadata_for_embedding": "Tool ID: Sign contract. Function: Signs a contract as part of the agreement process. Input Requirements: contract. Output Modality: signed_contract."
+  },
+  {
+    "id": "Track performance in real-time",
+    "desc": "Tracks process or campaign performance in real time.",
+    "input_type": ["active_campaign"],
+    "output_type": ["performance_data"],
+    "metadata_for_embedding": "Tool ID: Track performance in real-time. Function: Tracks process or campaign performance in real time. Input Requirements: active_campaign. Output Modality: performance_data."
+  },
+  {
+    "id": "Update inventory levels",
+    "desc": "Updates inventory levels based on stock changes.",
+    "input_type": ["stock_record"],
+    "output_type": ["updated_inventory_level"],
+    "metadata_for_embedding": "Tool ID: Update inventory levels. Function: Updates inventory levels based on stock changes. Input Requirements: stock_record. Output Modality: updated_inventory_level."
+  },
+  {
+    "id": "Update inventory system with expected delivery dates",
+    "desc": "Updates the inventory system with expected delivery dates.",
+    "input_type": ["supplier_order"],
+    "output_type": ["delivery_date_record"],
+    "metadata_for_embedding": "Tool ID: Update inventory system with expected delivery dates. Function: Updates the inventory system with expected delivery dates. Input Requirements: supplier_order. Output Modality: delivery_date_record."
+  }
+]
