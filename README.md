@@ -58,7 +58,7 @@ We evaluate workflow generation quality at different levels of structural granul
 Perfect Match Rate (PMR) evaluates the correctness of the complete workflow structure:
 
 $$
-\operatorname{PMR}=\frac{1}{N}\sum_{i=1}^{N}\mathbb{I}\left(G_{\mathrm{pred},i}=G_{\mathrm{gt},i}\right).
+\mathrm{PMR}=\frac{1}{N}\sum_{i=1}^{N}\mathbb{I}\left(G_{\mathrm{pred},i}=G_{\mathrm{gt},i}\right).
 $$
 
 The indicator function returns one only when both $V_{\mathrm{pred},i}=V_{\mathrm{gt},i}$ and $E_{\mathrm{pred},i}=E_{\mathrm{gt},i}$; otherwise, it returns zero.
@@ -68,12 +68,12 @@ The indicator function returns one only when both $V_{\mathrm{pred},i}=V_{\mathr
 We use set-based Precision, Recall, and F1 to evaluate the accuracy of workflow node selection and dependency construction. For $X\in\{V,E\}$:
 
 $$
-\operatorname{Precision}(X)=\frac{|X_{\mathrm{pred}}\cap X_{\mathrm{gt}}|}{|X_{\mathrm{pred}}|}, \qquad
-\operatorname{Recall}(X)=\frac{|X_{\mathrm{pred}}\cap X_{\mathrm{gt}}|}{|X_{\mathrm{gt}}|},
+\mathrm{Precision}(X)=\frac{|X_{\mathrm{pred}}\cap X_{\mathrm{gt}}|}{|X_{\mathrm{pred}}|}, \qquad
+\mathrm{Recall}(X)=\frac{|X_{\mathrm{pred}}\cap X_{\mathrm{gt}}|}{|X_{\mathrm{gt}}|},
 $$
 
 $$
-\operatorname{F1}(X)=\frac{2\,\operatorname{Precision}(X)\operatorname{Recall}(X)}{\operatorname{Precision}(X)+\operatorname{Recall}(X)}.
+\mathrm{F1}(X)=\frac{2\,\mathrm{Precision}(X)\mathrm{Recall}(X)}{\mathrm{Precision}(X)+\mathrm{Recall}(X)}.
 $$
 
 When $X=V$, the resulting Node F1 measures agreement between the generated and ground-truth workflow nodes. When $X=E$, Edge F1 measures the correctness of the generated dependency relationships. Dataset-level results are obtained by averaging the corresponding F1 scores across all workflow modeling tasks.
@@ -83,7 +83,7 @@ When $X=V$, the resulting Node F1 measures agreement between the generated and g
 We use a set-based simplified Graph Edit Distance (sGED) to quantify the overall structural difference between a generated workflow and its ground truth:
 
 $$
-\operatorname{sGED}(G_{\mathrm{pred}},G_{\mathrm{gt}})=
+\mathrm{sGED}(G_{\mathrm{pred}},G_{\mathrm{gt}})=
 |V_{\mathrm{gt}}\setminus V_{\mathrm{pred}}|+
 |V_{\mathrm{pred}}\setminus V_{\mathrm{gt}}|+
 |E_{\mathrm{gt}}\setminus E_{\mathrm{pred}}|+
