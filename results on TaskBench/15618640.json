@@ -1,0 +1,22 @@
+{
+    "pred_nodes":  [
+                       "Image Colorizer",
+                       "Video Synchronization",
+                       "Video-to-Image",
+                       "Video-to-Text"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Video Synchronization",
+                           "Video-to-Image"
+                       ],
+                       [
+                           "Video Synchronization",
+                           "Video-to-Text"
+                       ],
+                       [
+                           "Video-to-Image",
+                           "Image Colorizer"
+                       ]
+                   ]
+}

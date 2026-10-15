@@ -1,0 +1,22 @@
+{
+    "pred_nodes":  [
+                       "Text Sentiment Analysis",
+                       "Video Stabilizer",
+                       "Video-to-Text",
+                       "Voice Changer"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Video Stabilizer",
+                           "Video-to-Text"
+                       ],
+                       [
+                           "Video Stabilizer",
+                           "Voice Changer"
+                       ],
+                       [
+                           "Video-to-Text",
+                           "Text Sentiment Analysis"
+                       ]
+                   ]
+}

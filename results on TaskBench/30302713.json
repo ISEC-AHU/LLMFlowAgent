@@ -1,0 +1,22 @@
+{
+    "pred_nodes":  [
+                       "Audio Effects",
+                       "Audio Noise Reduction",
+                       "Text Translator",
+                       "Video-to-Text"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Audio Noise Reduction",
+                           "Audio Effects"
+                       ],
+                       [
+                           "Text Translator",
+                           "Audio Effects"
+                       ],
+                       [
+                           "Video-to-Text",
+                           "Text Translator"
+                       ]
+                   ]
+}

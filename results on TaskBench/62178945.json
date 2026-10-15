@@ -1,0 +1,22 @@
+{
+    "pred_nodes":  [
+                       "Text Grammar Checker",
+                       "Text Search",
+                       "Text Translator",
+                       "Text-to-Audio"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Text Grammar Checker",
+                           "Text-to-Audio"
+                       ],
+                       [
+                           "Text Translator",
+                           "Text Grammar Checker"
+                       ],
+                       [
+                           "Text Translator",
+                           "Text Search"
+                       ]
+                   ]
+}

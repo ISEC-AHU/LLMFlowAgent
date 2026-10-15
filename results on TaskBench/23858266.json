@@ -1,0 +1,22 @@
+{
+    "pred_nodes":  [
+                       "Audio Effects",
+                       "Audio Splicer",
+                       "Image-to-Text",
+                       "Text Sentiment Analysis"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Audio Effects",
+                           "Audio Splicer"
+                       ],
+                       [
+                           "Image-to-Text",
+                           "Audio Effects"
+                       ],
+                       [
+                           "Image-to-Text",
+                           "Text Sentiment Analysis"
+                       ]
+                   ]
+}

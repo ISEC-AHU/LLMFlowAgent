@@ -1,0 +1,17 @@
+{
+    "pred_nodes":  [
+                       "Text Downloader",
+                       "Text Sentiment Analysis",
+                       "Video Speed Changer"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Text Downloader",
+                           "Text Sentiment Analysis"
+                       ],
+                       [
+                           "Text Sentiment Analysis",
+                           "Video Speed Changer"
+                       ]
+                   ]
+}

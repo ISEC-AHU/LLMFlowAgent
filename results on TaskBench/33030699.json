@@ -1,0 +1,32 @@
+{
+    "pred_nodes":  [
+                       "Audio Downloader",
+                       "Audio Noise Reduction",
+                       "Audio-to-Image",
+                       "Image Colorizer",
+                       "Image Search (by Image)",
+                       "Image Style Transfer"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Audio Downloader",
+                           "Audio Noise Reduction"
+                       ],
+                       [
+                           "Audio Noise Reduction",
+                           "Audio-to-Image"
+                       ],
+                       [
+                           "Audio-to-Image",
+                           "Image Search (by Image)"
+                       ],
+                       [
+                           "Image Search (by Image)",
+                           "Image Style Transfer"
+                       ],
+                       [
+                           "Image Style Transfer",
+                           "Image Colorizer"
+                       ]
+                   ]
+}

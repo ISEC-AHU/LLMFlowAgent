@@ -1,0 +1,32 @@
+{
+    "pred_nodes":  [
+                       "Audio Noise Reduction",
+                       "Text-to-Audio",
+                       "Video Stabilizer",
+                       "Video Synchronization",
+                       "Video-to-Audio",
+                       "Video-to-Text"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Audio Noise Reduction",
+                           "Text-to-Audio"
+                       ],
+                       [
+                           "Text-to-Audio",
+                           "Video Synchronization"
+                       ],
+                       [
+                           "Video Stabilizer",
+                           "Video Synchronization"
+                       ],
+                       [
+                           "Video-to-Audio",
+                           "Audio Noise Reduction"
+                       ],
+                       [
+                           "Video-to-Text",
+                           "Text-to-Audio"
+                       ]
+                   ]
+}

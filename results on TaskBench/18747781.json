@@ -1,0 +1,17 @@
+{
+    "pred_nodes":  [
+                       "Video Speed Changer",
+                       "Video-to-Audio",
+                       "Video-to-Image"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Video Speed Changer",
+                           "Video-to-Audio"
+                       ],
+                       [
+                           "Video Speed Changer",
+                           "Video-to-Image"
+                       ]
+                   ]
+}

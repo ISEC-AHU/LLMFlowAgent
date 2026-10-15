@@ -1,0 +1,22 @@
+{
+    "pred_nodes":  [
+                       "Text Paraphraser",
+                       "Text Simplifier",
+                       "Text Summarizer",
+                       "Video Speed Changer"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Text Paraphraser",
+                           "Text Summarizer"
+                       ],
+                       [
+                           "Text Simplifier",
+                           "Video Speed Changer"
+                       ],
+                       [
+                           "Text Summarizer",
+                           "Text Simplifier"
+                       ]
+                   ]
+}

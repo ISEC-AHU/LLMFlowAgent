@@ -1,0 +1,17 @@
+{
+    "pred_nodes":  [
+                       "Image-to-Text",
+                       "Keyword Extractor",
+                       "Text Grammar Checker"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Image-to-Text",
+                           "Text Grammar Checker"
+                       ],
+                       [
+                           "Text Grammar Checker",
+                           "Keyword Extractor"
+                       ]
+                   ]
+}

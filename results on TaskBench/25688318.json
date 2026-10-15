@@ -1,0 +1,17 @@
+{
+    "pred_nodes":  [
+                       "Image Downloader",
+                       "Image-to-Text",
+                       "Image-to-Video"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Image Downloader",
+                           "Image-to-Text"
+                       ],
+                       [
+                           "Image Downloader",
+                           "Image-to-Video"
+                       ]
+                   ]
+}

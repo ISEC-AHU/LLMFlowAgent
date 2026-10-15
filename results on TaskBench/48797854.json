@@ -1,0 +1,22 @@
+{
+    "pred_nodes":  [
+                       "Keyword Extractor",
+                       "Text Sentiment Analysis",
+                       "Text Translator",
+                       "Text-to-Image"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Keyword Extractor",
+                           "Text Translator"
+                       ],
+                       [
+                           "Keyword Extractor",
+                           "Text-to-Image"
+                       ],
+                       [
+                           "Text Sentiment Analysis",
+                           "Keyword Extractor"
+                       ]
+                   ]
+}

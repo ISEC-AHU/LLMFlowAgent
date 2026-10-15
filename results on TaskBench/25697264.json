@@ -1,0 +1,26 @@
+{
+    "pred_nodes":  [
+                       "Audio Effects",
+                       "Audio-to-Text",
+                       "Text Expander",
+                       "URL Extractor"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Audio Effects",
+                           "Text Expander"
+                       ],
+                       [
+                           "Audio-to-Text",
+                           "Text Expander"
+                       ],
+                       [
+                           "Audio-to-Text",
+                           "URL Extractor"
+                       ],
+                       [
+                           "Text Expander",
+                           "Text Expander"
+                       ]
+                   ]
+}

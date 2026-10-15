@@ -1,0 +1,36 @@
+{
+    "pred_nodes":  [
+                       "Text Paraphraser",
+                       "Text Simplifier",
+                       "Text-to-Audio",
+                       "Text-to-Video",
+                       "Video Voiceover",
+                       "Video-to-Text"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Text Paraphraser",
+                           "Text Simplifier"
+                       ],
+                       [
+                           "Text Simplifier",
+                           "Text Paraphraser"
+                       ],
+                       [
+                           "Text Simplifier",
+                           "Text-to-Video"
+                       ],
+                       [
+                           "Text-to-Video",
+                           "Video Voiceover"
+                       ],
+                       [
+                           "Text-to-Video",
+                           "Video-to-Text"
+                       ],
+                       [
+                           "Video-to-Text",
+                           "Text-to-Audio"
+                       ]
+                   ]
+}

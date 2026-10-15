@@ -1,0 +1,22 @@
+{
+    "pred_nodes":  [
+                       "Audio Noise Reduction",
+                       "Audio-to-Image",
+                       "Image-to-Video",
+                       "Voice Changer"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Audio Noise Reduction",
+                           "Audio-to-Image"
+                       ],
+                       [
+                           "Audio-to-Image",
+                           "Image-to-Video"
+                       ],
+                       [
+                           "Voice Changer",
+                           "Audio Noise Reduction"
+                       ]
+                   ]
+}

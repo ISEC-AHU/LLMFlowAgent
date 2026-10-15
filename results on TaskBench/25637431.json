@@ -1,0 +1,22 @@
+{
+    "pred_nodes":  [
+                       "Text Translator",
+                       "Text-to-Audio",
+                       "Text-to-Image",
+                       "Video Voiceover"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Text Translator",
+                           "Text-to-Audio"
+                       ],
+                       [
+                           "Text Translator",
+                           "Text-to-Image"
+                       ],
+                       [
+                           "Text Translator",
+                           "Video Voiceover"
+                       ]
+                   ]
+}

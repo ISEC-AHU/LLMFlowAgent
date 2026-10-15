@@ -1,0 +1,37 @@
+{
+    "pred_nodes":  [
+                       "Audio-to-Text",
+                       "Text Simplifier",
+                       "Text Summarizer",
+                       "Text-to-Audio",
+                       "Topic Generator",
+                       "Video Synchronization",
+                       "Voice Changer"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Audio-to-Text",
+                           "Text Simplifier"
+                       ],
+                       [
+                           "Audio-to-Text",
+                           "Text Summarizer"
+                       ],
+                       [
+                           "Audio-to-Text",
+                           "Topic Generator"
+                       ],
+                       [
+                           "Text-to-Audio",
+                           "Audio-to-Text"
+                       ],
+                       [
+                           "Text-to-Audio",
+                           "Voice Changer"
+                       ],
+                       [
+                           "Voice Changer",
+                           "Video Synchronization"
+                       ]
+                   ]
+}

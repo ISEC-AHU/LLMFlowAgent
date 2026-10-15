@@ -1,0 +1,22 @@
+{
+    "pred_nodes":  [
+                       "Audio Noise Reduction",
+                       "Video Downloader",
+                       "Video Stabilizer",
+                       "Video-to-Audio"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Video Downloader",
+                           "Video Stabilizer"
+                       ],
+                       [
+                           "Video Downloader",
+                           "Video-to-Audio"
+                       ],
+                       [
+                           "Video-to-Audio",
+                           "Audio Noise Reduction"
+                       ]
+                   ]
+}

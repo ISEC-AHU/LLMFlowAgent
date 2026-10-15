@@ -1,0 +1,12 @@
+{
+    "pred_nodes":  [
+                       "Audio Effects",
+                       "Audio Splicer"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Audio Splicer",
+                           "Audio Effects"
+                       ]
+                   ]
+}

@@ -1,0 +1,35 @@
+{
+    "pred_nodes":  [
+                       "Text Downloader",
+                       "Text Sentiment Analysis",
+                       "Text-to-Video",
+                       "Video Speed Changer",
+                       "Video Voiceover"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Text Downloader",
+                           "Text Sentiment Analysis"
+                       ],
+                       [
+                           "Text Downloader",
+                           "Text-to-Video"
+                       ],
+                       [
+                           "Text Downloader",
+                           "Video Speed Changer"
+                       ],
+                       [
+                           "Text Downloader",
+                           "Video Voiceover"
+                       ],
+                       [
+                           "Text-to-Video",
+                           "Video Speed Changer"
+                       ],
+                       [
+                           "Video Speed Changer",
+                           "Video Voiceover"
+                       ]
+                   ]
+}

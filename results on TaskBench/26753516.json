@@ -1,0 +1,17 @@
+{
+    "pred_nodes":  [
+                       "Image-to-Text",
+                       "Text-to-Audio",
+                       "URL Extractor"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Image-to-Text",
+                           "Text-to-Audio"
+                       ],
+                       [
+                           "Image-to-Text",
+                           "URL Extractor"
+                       ]
+                   ]
+}

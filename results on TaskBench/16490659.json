@@ -1,0 +1,32 @@
+{
+    "pred_nodes":  [
+                       "Keyword Extractor",
+                       "Text Paraphraser",
+                       "Text Simplifier",
+                       "Text Summarizer",
+                       "Text-to-Audio",
+                       "Topic Generator"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Keyword Extractor",
+                           "Text Paraphraser"
+                       ],
+                       [
+                           "Text Paraphraser",
+                           "Text Summarizer"
+                       ],
+                       [
+                           "Text Paraphraser",
+                           "Text-to-Audio"
+                       ],
+                       [
+                           "Text Simplifier",
+                           "Text Paraphraser"
+                       ],
+                       [
+                           "Topic Generator",
+                           "Text Simplifier"
+                       ]
+                   ]
+}

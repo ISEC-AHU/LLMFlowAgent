@@ -1,0 +1,22 @@
+{
+    "pred_nodes":  [
+                       "Image Search",
+                       "Image-to-Text",
+                       "Text Grammar Checker",
+                       "Text Sentiment Analysis"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Image-to-Text",
+                           "Text Grammar Checker"
+                       ],
+                       [
+                           "Image-to-Text",
+                           "Text Sentiment Analysis"
+                       ],
+                       [
+                           "Text Sentiment Analysis",
+                           "Image Search"
+                       ]
+                   ]
+}

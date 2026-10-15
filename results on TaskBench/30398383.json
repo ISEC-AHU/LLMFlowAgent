@@ -1,0 +1,22 @@
+{
+    "pred_nodes":  [
+                       "Audio-to-Text",
+                       "Image Search (by Image)",
+                       "Image Style Transfer",
+                       "Text-to-Image"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Audio-to-Text",
+                           "Text-to-Image"
+                       ],
+                       [
+                           "Image Style Transfer",
+                           "Image Search (by Image)"
+                       ],
+                       [
+                           "Text-to-Image",
+                           "Image Style Transfer"
+                       ]
+                   ]
+}

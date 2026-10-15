@@ -1,0 +1,22 @@
+{
+    "pred_nodes":  [
+                       "Text Translator",
+                       "Video Speed Changer",
+                       "Video Voiceover",
+                       "Video-to-Text"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Text Translator",
+                           "Video Voiceover"
+                       ],
+                       [
+                           "Video Speed Changer",
+                           "Video Voiceover"
+                       ],
+                       [
+                           "Video-to-Text",
+                           "Text Translator"
+                       ]
+                   ]
+}

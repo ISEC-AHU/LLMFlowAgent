@@ -1,0 +1,17 @@
+{
+    "pred_nodes":  [
+                       "Audio-to-Text",
+                       "Topic Generator",
+                       "Video Voiceover"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Audio-to-Text",
+                           "Topic Generator"
+                       ],
+                       [
+                           "Audio-to-Text",
+                           "Video Voiceover"
+                       ]
+                   ]
+}

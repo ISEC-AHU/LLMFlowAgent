@@ -1,0 +1,22 @@
+{
+    "pred_nodes":  [
+                       "Audio-to-Text",
+                       "Text Expander",
+                       "Text Translator",
+                       "Topic Generator"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Audio-to-Text",
+                           "Text Translator"
+                       ],
+                       [
+                           "Text Translator",
+                           "Text Expander"
+                       ],
+                       [
+                           "Text Translator",
+                           "Topic Generator"
+                       ]
+                   ]
+}

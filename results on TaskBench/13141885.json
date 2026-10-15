@@ -1,0 +1,22 @@
+{
+    "pred_nodes":  [
+                       "Text Expander",
+                       "Text Grammar Checker",
+                       "Text Sentiment Analysis",
+                       "Text Summarizer"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Text Grammar Checker",
+                           "Text Expander"
+                       ],
+                       [
+                           "Text Grammar Checker",
+                           "Text Sentiment Analysis"
+                       ],
+                       [
+                           "Text Grammar Checker",
+                           "Text Summarizer"
+                       ]
+                   ]
+}

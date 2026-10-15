@@ -1,0 +1,31 @@
+{
+    "pred_nodes":  [
+                       "Audio Effects",
+                       "Text Paraphraser",
+                       "Text Sentiment Analysis",
+                       "Text Simplifier",
+                       "Text-to-Audio"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Text Paraphraser",
+                           "Text Simplifier"
+                       ],
+                       [
+                           "Text Paraphraser",
+                           "Text-to-Audio"
+                       ],
+                       [
+                           "Text Sentiment Analysis",
+                           "Audio Effects"
+                       ],
+                       [
+                           "Text Simplifier",
+                           "Text Sentiment Analysis"
+                       ],
+                       [
+                           "Text-to-Audio",
+                           "Audio Effects"
+                       ]
+                   ]
+}

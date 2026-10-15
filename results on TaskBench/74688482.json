@@ -1,0 +1,22 @@
+{
+    "pred_nodes":  [
+                       "Article Spinner",
+                       "Text Paraphraser",
+                       "Video Speed Changer",
+                       "Video Voiceover"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Article Spinner",
+                           "Video Voiceover"
+                       ],
+                       [
+                           "Text Paraphraser",
+                           "Article Spinner"
+                       ],
+                       [
+                           "Video Speed Changer",
+                           "Video Voiceover"
+                       ]
+                   ]
+}

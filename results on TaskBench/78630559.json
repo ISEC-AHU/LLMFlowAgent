@@ -1,0 +1,36 @@
+{
+    "pred_nodes":  [
+                       "Audio Splicer",
+                       "URL Extractor",
+                       "Video Downloader",
+                       "Video Speed Changer",
+                       "Video Synchronization",
+                       "Video-to-Audio"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Audio Splicer",
+                           "Video Synchronization"
+                       ],
+                       [
+                           "URL Extractor",
+                           "Video Downloader"
+                       ],
+                       [
+                           "Video Downloader",
+                           "Video Speed Changer"
+                       ],
+                       [
+                           "Video Downloader",
+                           "Video-to-Audio"
+                       ],
+                       [
+                           "Video Speed Changer",
+                           "Video Synchronization"
+                       ],
+                       [
+                           "Video-to-Audio",
+                           "Audio Splicer"
+                       ]
+                   ]
+}

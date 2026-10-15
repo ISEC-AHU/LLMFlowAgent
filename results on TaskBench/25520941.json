@@ -1,0 +1,22 @@
+{
+    "pred_nodes":  [
+                       "Audio Effects",
+                       "Image Search",
+                       "Text Search",
+                       "Text Sentiment Analysis"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Image Search",
+                           "Audio Effects"
+                       ],
+                       [
+                           "Text Search",
+                           "Image Search"
+                       ],
+                       [
+                           "Text Sentiment Analysis",
+                           "Text Search"
+                       ]
+                   ]
+}

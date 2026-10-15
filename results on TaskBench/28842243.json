@@ -1,0 +1,25 @@
+{
+    "pred_nodes":  [
+                       "Text Summarizer",
+                       "Text-to-Video",
+                       "URL Extractor"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Text Summarizer",
+                           "Text Summarizer"
+                       ],
+                       [
+                           "Text Summarizer",
+                           "Text-to-Video"
+                       ],
+                       [
+                           "Text Summarizer",
+                           "URL Extractor"
+                       ],
+                       [
+                           "URL Extractor",
+                           "Text-to-Video"
+                       ]
+                   ]
+}

@@ -1,0 +1,22 @@
+{
+    "pred_nodes":  [
+                       "Audio-to-Text",
+                       "Image Search",
+                       "Keyword Extractor",
+                       "Text Simplifier"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Audio-to-Text",
+                           "Text Simplifier"
+                       ],
+                       [
+                           "Keyword Extractor",
+                           "Image Search"
+                       ],
+                       [
+                           "Text Simplifier",
+                           "Keyword Extractor"
+                       ]
+                   ]
+}

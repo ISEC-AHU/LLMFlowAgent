@@ -1,0 +1,17 @@
+{
+    "pred_nodes":  [
+                       "Image-to-Text",
+                       "Text Paraphraser",
+                       "URL Extractor"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Image-to-Text",
+                           "Text Paraphraser"
+                       ],
+                       [
+                           "Image-to-Text",
+                           "URL Extractor"
+                       ]
+                   ]
+}

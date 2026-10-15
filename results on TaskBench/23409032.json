@@ -1,0 +1,17 @@
+{
+    "pred_nodes":  [
+                       "Image Search",
+                       "Keyword Extractor",
+                       "Text Summarizer"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Keyword Extractor",
+                           "Image Search"
+                       ],
+                       [
+                           "Keyword Extractor",
+                           "Text Summarizer"
+                       ]
+                   ]
+}

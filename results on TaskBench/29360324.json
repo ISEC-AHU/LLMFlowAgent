@@ -1,0 +1,17 @@
+{
+    "pred_nodes":  [
+                       "Image Colorizer",
+                       "Image Stitcher",
+                       "Video-to-Image"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Image Colorizer",
+                           "Image Stitcher"
+                       ],
+                       [
+                           "Video-to-Image",
+                           "Image Stitcher"
+                       ]
+                   ]
+}

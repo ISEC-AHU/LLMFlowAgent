@@ -1,0 +1,26 @@
+{
+    "pred_nodes":  [
+                       "Audio Downloader",
+                       "Audio Splicer",
+                       "Text Expander",
+                       "Voice Changer"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Audio Downloader",
+                           "Audio Splicer"
+                       ],
+                       [
+                           "Audio Splicer",
+                           "Voice Changer"
+                       ],
+                       [
+                           "Text Expander",
+                           "Audio Downloader"
+                       ],
+                       [
+                           "Voice Changer",
+                           "Voice Changer"
+                       ]
+                   ]
+}

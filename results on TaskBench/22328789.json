@@ -1,0 +1,22 @@
+{
+    "pred_nodes":  [
+                       "Image Colorizer",
+                       "Image Downloader",
+                       "Image Stitcher",
+                       "Image Style Transfer"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Image Colorizer",
+                           "Image Stitcher"
+                       ],
+                       [
+                           "Image Downloader",
+                           "Image Stitcher"
+                       ],
+                       [
+                           "Image Stitcher",
+                           "Image Style Transfer"
+                       ]
+                   ]
+}

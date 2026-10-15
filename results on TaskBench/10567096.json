@@ -1,0 +1,21 @@
+{
+    "pred_nodes":  [
+                       "Keyword Extractor",
+                       "Text Sentiment Analysis",
+                       "Video Search"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Keyword Extractor",
+                           "Video Search"
+                       ],
+                       [
+                           "Text Sentiment Analysis",
+                           "Keyword Extractor"
+                       ],
+                       [
+                           "Text Sentiment Analysis",
+                           "Video Search"
+                       ]
+                   ]
+}

@@ -1,0 +1,22 @@
+{
+    "pred_nodes":  [
+                       "Article Spinner",
+                       "Text Grammar Checker",
+                       "Text-to-Video",
+                       "Topic Generator"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Article Spinner",
+                           "Text-to-Video"
+                       ],
+                       [
+                           "Text Grammar Checker",
+                           "Article Spinner"
+                       ],
+                       [
+                           "Text Grammar Checker",
+                           "Topic Generator"
+                       ]
+                   ]
+}

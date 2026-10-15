@@ -1,0 +1,22 @@
+{
+    "pred_nodes":  [
+                       "Text Sentiment Analysis",
+                       "Video Speed Changer",
+                       "Video Synchronization",
+                       "Voice Changer"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Text Sentiment Analysis",
+                           "Video Speed Changer"
+                       ],
+                       [
+                           "Video Speed Changer",
+                           "Video Synchronization"
+                       ],
+                       [
+                           "Voice Changer",
+                           "Video Synchronization"
+                       ]
+                   ]
+}

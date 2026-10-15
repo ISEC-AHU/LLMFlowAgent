@@ -1,0 +1,22 @@
+{
+    "pred_nodes":  [
+                       "Audio-to-Text",
+                       "Image Colorizer",
+                       "Image-to-Text",
+                       "Text-to-Image"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Audio-to-Text",
+                           "Text-to-Image"
+                       ],
+                       [
+                           "Image Colorizer",
+                           "Image-to-Text"
+                       ],
+                       [
+                           "Text-to-Image",
+                           "Image Colorizer"
+                       ]
+                   ]
+}

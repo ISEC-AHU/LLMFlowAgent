@@ -144,7 +144,7 @@ def _coordination_decision(
     graph-factual defect is downgraded to ``repair`` so the defect is fixed in a
     later round instead of being averaged away.
     """
-    if structural_failure or composite_score < regeneration_threshold:
+    if structural_failure or composite_score <= regeneration_threshold:
         return "regenerate"
     if composite_score >= acceptance_threshold:
         return "repair" if deterministic_defect else "accept"

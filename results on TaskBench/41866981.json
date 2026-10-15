@@ -1,0 +1,22 @@
+{
+    "pred_nodes":  [
+                       "Article Spinner",
+                       "Image-to-Text",
+                       "Text-to-Audio",
+                       "Text-to-Image"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Article Spinner",
+                           "Text-to-Audio"
+                       ],
+                       [
+                           "Article Spinner",
+                           "Text-to-Image"
+                       ],
+                       [
+                           "Text-to-Image",
+                           "Image-to-Text"
+                       ]
+                   ]
+}

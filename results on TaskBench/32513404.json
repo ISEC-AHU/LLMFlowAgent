@@ -1,0 +1,22 @@
+{
+    "pred_nodes":  [
+                       "Audio-to-Text",
+                       "Text Paraphraser",
+                       "Video Speed Changer",
+                       "Video Voiceover"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Audio-to-Text",
+                           "Text Paraphraser"
+                       ],
+                       [
+                           "Text Paraphraser",
+                           "Video Voiceover"
+                       ],
+                       [
+                           "Video Speed Changer",
+                           "Video Voiceover"
+                       ]
+                   ]
+}

@@ -1,0 +1,22 @@
+{
+    "pred_nodes":  [
+                       "Image Colorizer",
+                       "Image-to-Text",
+                       "Text Grammar Checker",
+                       "Topic Generator"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Image Colorizer",
+                           "Image-to-Text"
+                       ],
+                       [
+                           "Image-to-Text",
+                           "Text Grammar Checker"
+                       ],
+                       [
+                           "Image-to-Text",
+                           "Topic Generator"
+                       ]
+                   ]
+}

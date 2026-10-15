@@ -1,0 +1,22 @@
+{
+    "pred_nodes":  [
+                       "Image Search",
+                       "Text Expander",
+                       "Text Simplifier",
+                       "Video-to-Text"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Text Expander",
+                           "Image Search"
+                       ],
+                       [
+                           "Text Simplifier",
+                           "Text Expander"
+                       ],
+                       [
+                           "Video-to-Text",
+                           "Text Simplifier"
+                       ]
+                   ]
+}

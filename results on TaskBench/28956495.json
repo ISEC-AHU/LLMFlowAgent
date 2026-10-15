@@ -1,0 +1,17 @@
+{
+    "pred_nodes":  [
+                       "Image-to-Text",
+                       "Text Sentiment Analysis",
+                       "URL Extractor"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Image-to-Text",
+                           "Text Sentiment Analysis"
+                       ],
+                       [
+                           "Image-to-Text",
+                           "URL Extractor"
+                       ]
+                   ]
+}

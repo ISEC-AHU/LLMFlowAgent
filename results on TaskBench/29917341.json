@@ -1,0 +1,22 @@
+{
+    "pred_nodes":  [
+                       "Image Stitcher",
+                       "Image-to-Text",
+                       "Text-to-Image",
+                       "Text-to-Video"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Image Stitcher",
+                           "Image-to-Text"
+                       ],
+                       [
+                           "Image-to-Text",
+                           "Text-to-Image"
+                       ],
+                       [
+                           "Image-to-Text",
+                           "Text-to-Video"
+                       ]
+                   ]
+}

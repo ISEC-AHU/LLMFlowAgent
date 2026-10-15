@@ -1,0 +1,17 @@
+{
+    "pred_nodes":  [
+                       "Keyword Extractor",
+                       "Text Paraphraser",
+                       "Video-to-Text"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Video-to-Text",
+                           "Keyword Extractor"
+                       ],
+                       [
+                           "Video-to-Text",
+                           "Text Paraphraser"
+                       ]
+                   ]
+}

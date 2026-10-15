@@ -1,0 +1,17 @@
+{
+    "pred_nodes":  [
+                       "Text Paraphraser",
+                       "Text Search",
+                       "Video Search"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Text Paraphraser",
+                           "Text Search"
+                       ],
+                       [
+                           "Text Paraphraser",
+                           "Video Search"
+                       ]
+                   ]
+}

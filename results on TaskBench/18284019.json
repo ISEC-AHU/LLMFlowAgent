@@ -1,0 +1,17 @@
+{
+    "pred_nodes":  [
+                       "Image-to-Video",
+                       "Video Stabilizer",
+                       "Video-to-Audio"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Image-to-Video",
+                           "Video Stabilizer"
+                       ],
+                       [
+                           "Image-to-Video",
+                           "Video-to-Audio"
+                       ]
+                   ]
+}

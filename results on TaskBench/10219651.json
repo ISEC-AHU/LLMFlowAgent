@@ -1,0 +1,26 @@
+{
+    "pred_nodes":  [
+                       "Audio-to-Image",
+                       "Image Colorizer",
+                       "Image Style Transfer",
+                       "Image-to-Video"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Audio-to-Image",
+                           "Image Style Transfer"
+                       ],
+                       [
+                           "Image Colorizer",
+                           "Image Style Transfer"
+                       ],
+                       [
+                           "Image Colorizer",
+                           "Image-to-Video"
+                       ],
+                       [
+                           "Image Style Transfer",
+                           "Image-to-Video"
+                       ]
+                   ]
+}

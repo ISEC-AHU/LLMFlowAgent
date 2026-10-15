@@ -1,0 +1,46 @@
+{
+    "pred_nodes":  [
+                       "Text Expander",
+                       "Text Grammar Checker",
+                       "Text Paraphraser",
+                       "Text Simplifier",
+                       "Text-to-Audio",
+                       "Video Stabilizer",
+                       "Video Synchronization",
+                       "Video Voiceover"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Text Expander",
+                           "Text Grammar Checker"
+                       ],
+                       [
+                           "Text Grammar Checker",
+                           "Text Paraphraser"
+                       ],
+                       [
+                           "Text Paraphraser",
+                           "Text-to-Audio"
+                       ],
+                       [
+                           "Text Paraphraser",
+                           "Video Voiceover"
+                       ],
+                       [
+                           "Text Simplifier",
+                           "Text Expander"
+                       ],
+                       [
+                           "Text-to-Audio",
+                           "Video Synchronization"
+                       ],
+                       [
+                           "Video Stabilizer",
+                           "Video Synchronization"
+                       ],
+                       [
+                           "Video Stabilizer",
+                           "Video Voiceover"
+                       ]
+                   ]
+}

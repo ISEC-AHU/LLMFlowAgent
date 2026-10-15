@@ -1,0 +1,32 @@
+{
+    "pred_nodes":  [
+                       "Audio Downloader",
+                       "Audio Effects",
+                       "Image Search",
+                       "Keyword Extractor",
+                       "Text Translator",
+                       "Voice Changer"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Audio Downloader",
+                           "Voice Changer"
+                       ],
+                       [
+                           "Keyword Extractor",
+                           "Audio Effects"
+                       ],
+                       [
+                           "Keyword Extractor",
+                           "Image Search"
+                       ],
+                       [
+                           "Text Translator",
+                           "Keyword Extractor"
+                       ],
+                       [
+                           "Voice Changer",
+                           "Audio Effects"
+                       ]
+                   ]
+}

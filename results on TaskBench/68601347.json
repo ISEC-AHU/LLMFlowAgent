@@ -1,0 +1,22 @@
+{
+    "pred_nodes":  [
+                       "Text Expander",
+                       "Topic Generator",
+                       "Video Speed Changer",
+                       "Video Voiceover"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Text Expander",
+                           "Video Voiceover"
+                       ],
+                       [
+                           "Topic Generator",
+                           "Text Expander"
+                       ],
+                       [
+                           "Video Speed Changer",
+                           "Video Voiceover"
+                       ]
+                   ]
+}

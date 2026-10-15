@@ -1,0 +1,46 @@
+{
+    "pred_nodes":  [
+                       "Audio Downloader",
+                       "Audio-to-Text",
+                       "Image Downloader",
+                       "Image-to-Video",
+                       "Text Expander",
+                       "Text-to-Video",
+                       "URL Extractor",
+                       "Video Synchronization"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Audio Downloader",
+                           "Audio-to-Text"
+                       ],
+                       [
+                           "Audio Downloader",
+                           "Video Synchronization"
+                       ],
+                       [
+                           "Audio-to-Text",
+                           "Text Expander"
+                       ],
+                       [
+                           "Audio-to-Text",
+                           "URL Extractor"
+                       ],
+                       [
+                           "Image Downloader",
+                           "Image-to-Video"
+                       ],
+                       [
+                           "Image-to-Video",
+                           "Video Synchronization"
+                       ],
+                       [
+                           "Text Expander",
+                           "Text-to-Video"
+                       ],
+                       [
+                           "URL Extractor",
+                           "Image Downloader"
+                       ]
+                   ]
+}

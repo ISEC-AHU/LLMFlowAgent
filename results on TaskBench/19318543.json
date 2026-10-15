@@ -1,0 +1,22 @@
+{
+    "pred_nodes":  [
+                       "Audio Downloader",
+                       "Audio-to-Image",
+                       "Image Colorizer",
+                       "Image Stitcher"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Audio Downloader",
+                           "Audio-to-Image"
+                       ],
+                       [
+                           "Audio-to-Image",
+                           "Image Stitcher"
+                       ],
+                       [
+                           "Image Colorizer",
+                           "Image Stitcher"
+                       ]
+                   ]
+}

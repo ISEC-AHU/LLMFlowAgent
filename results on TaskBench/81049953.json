@@ -1,0 +1,21 @@
+{
+    "pred_nodes":  [
+                       "Image Colorizer",
+                       "Image Search (by Image)",
+                       "Image-to-Video"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Image Colorizer",
+                           "Image Search (by Image)"
+                       ],
+                       [
+                           "Image Colorizer",
+                           "Image-to-Video"
+                       ],
+                       [
+                           "Image Search (by Image)",
+                           "Image-to-Video"
+                       ]
+                   ]
+}

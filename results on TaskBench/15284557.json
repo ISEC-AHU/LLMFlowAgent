@@ -1,0 +1,17 @@
+{
+    "pred_nodes":  [
+                       "Audio-to-Text",
+                       "Text Paraphraser",
+                       "Topic Generator"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Audio-to-Text",
+                           "Text Paraphraser"
+                       ],
+                       [
+                           "Audio-to-Text",
+                           "Topic Generator"
+                       ]
+                   ]
+}

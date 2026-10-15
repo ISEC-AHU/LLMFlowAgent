@@ -1,0 +1,35 @@
+{
+    "pred_nodes":  [
+                       "Keyword Extractor",
+                       "Text Search",
+                       "Text Sentiment Analysis",
+                       "Text Summarizer",
+                       "Topic Generator"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Keyword Extractor",
+                           "Text Sentiment Analysis"
+                       ],
+                       [
+                           "Keyword Extractor",
+                           "Text Summarizer"
+                       ],
+                       [
+                           "Keyword Extractor",
+                           "Topic Generator"
+                       ],
+                       [
+                           "Text Search",
+                           "Keyword Extractor"
+                       ],
+                       [
+                           "Text Summarizer",
+                           "Topic Generator"
+                       ],
+                       [
+                           "Topic Generator",
+                           "Text Search"
+                       ]
+                   ]
+}

@@ -1,0 +1,17 @@
+{
+    "pred_nodes":  [
+                       "Text Downloader",
+                       "Text Paraphraser",
+                       "Text Sentiment Analysis"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Text Downloader",
+                           "Text Paraphraser"
+                       ],
+                       [
+                           "Text Downloader",
+                           "Text Sentiment Analysis"
+                       ]
+                   ]
+}

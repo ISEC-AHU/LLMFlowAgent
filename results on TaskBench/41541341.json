@@ -1,0 +1,22 @@
+{
+    "pred_nodes":  [
+                       "Text Downloader",
+                       "Text Expander",
+                       "Text Sentiment Analysis",
+                       "Text-to-Image"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Text Downloader",
+                           "Text Sentiment Analysis"
+                       ],
+                       [
+                           "Text Expander",
+                           "Text-to-Image"
+                       ],
+                       [
+                           "Text Sentiment Analysis",
+                           "Text Expander"
+                       ]
+                   ]
+}

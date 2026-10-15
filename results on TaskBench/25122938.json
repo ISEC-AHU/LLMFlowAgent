@@ -1,0 +1,12 @@
+{
+    "pred_nodes":  [
+                       "Image Search",
+                       "Text Simplifier"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Text Simplifier",
+                           "Image Search"
+                       ]
+                   ]
+}

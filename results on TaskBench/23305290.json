@@ -1,0 +1,22 @@
+{
+    "pred_nodes":  [
+                       "Text Grammar Checker",
+                       "Text Search",
+                       "Video Speed Changer",
+                       "Video Stabilizer"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Text Grammar Checker",
+                           "Video Speed Changer"
+                       ],
+                       [
+                           "Text Search",
+                           "Text Grammar Checker"
+                       ],
+                       [
+                           "Video Stabilizer",
+                           "Video Speed Changer"
+                       ]
+                   ]
+}

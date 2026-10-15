@@ -1,0 +1,22 @@
+{
+    "pred_nodes":  [
+                       "Text Simplifier",
+                       "Text-to-Image",
+                       "Text-to-Video",
+                       "Video-to-Text"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Text Simplifier",
+                           "Text-to-Image"
+                       ],
+                       [
+                           "Text Simplifier",
+                           "Text-to-Video"
+                       ],
+                       [
+                           "Video-to-Text",
+                           "Text Simplifier"
+                       ]
+                   ]
+}

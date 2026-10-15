@@ -1,0 +1,27 @@
+{
+    "pred_nodes":  [
+                       "Article Spinner",
+                       "Text Downloader",
+                       "Text-to-Audio",
+                       "Topic Generator",
+                       "Voice Changer"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Text Downloader",
+                           "Article Spinner"
+                       ],
+                       [
+                           "Text Downloader",
+                           "Text-to-Audio"
+                       ],
+                       [
+                           "Text Downloader",
+                           "Topic Generator"
+                       ],
+                       [
+                           "Text-to-Audio",
+                           "Voice Changer"
+                       ]
+                   ]
+}

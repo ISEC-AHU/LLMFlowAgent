@@ -1,0 +1,27 @@
+{
+    "pred_nodes":  [
+                       "Keyword Extractor",
+                       "Text Summarizer",
+                       "Text-to-Image",
+                       "Topic Generator",
+                       "Video Search"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Keyword Extractor",
+                           "Text Summarizer"
+                       ],
+                       [
+                           "Keyword Extractor",
+                           "Topic Generator"
+                       ],
+                       [
+                           "Topic Generator",
+                           "Text-to-Image"
+                       ],
+                       [
+                           "Topic Generator",
+                           "Video Search"
+                       ]
+                   ]
+}

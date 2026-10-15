@@ -1,0 +1,17 @@
+{
+    "pred_nodes":  [
+                       "Audio-to-Image",
+                       "Image Style Transfer",
+                       "Video-to-Image"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Audio-to-Image",
+                           "Image Style Transfer"
+                       ],
+                       [
+                           "Video-to-Image",
+                           "Image Style Transfer"
+                       ]
+                   ]
+}

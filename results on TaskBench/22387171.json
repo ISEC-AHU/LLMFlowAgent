@@ -1,0 +1,32 @@
+{
+    "pred_nodes":  [
+                       "Article Spinner",
+                       "Keyword Extractor",
+                       "Text Expander",
+                       "Text Grammar Checker",
+                       "Video Stabilizer",
+                       "Video Voiceover"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Article Spinner",
+                           "Text Expander"
+                       ],
+                       [
+                           "Text Expander",
+                           "Keyword Extractor"
+                       ],
+                       [
+                           "Text Expander",
+                           "Text Grammar Checker"
+                       ],
+                       [
+                           "Text Grammar Checker",
+                           "Video Voiceover"
+                       ],
+                       [
+                           "Video Voiceover",
+                           "Video Stabilizer"
+                       ]
+                   ]
+}

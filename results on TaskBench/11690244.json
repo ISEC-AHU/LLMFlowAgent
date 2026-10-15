@@ -1,0 +1,27 @@
+{
+    "pred_nodes":  [
+                       "Audio-to-Text",
+                       "Topic Generator",
+                       "URL Extractor",
+                       "Video Search",
+                       "Video-to-Image"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Audio-to-Text",
+                           "Topic Generator"
+                       ],
+                       [
+                           "Audio-to-Text",
+                           "URL Extractor"
+                       ],
+                       [
+                           "Topic Generator",
+                           "Video Search"
+                       ],
+                       [
+                           "Video Search",
+                           "Video-to-Image"
+                       ]
+                   ]
+}

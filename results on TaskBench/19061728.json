@@ -1,0 +1,22 @@
+{
+    "pred_nodes":  [
+                       "Image-to-Video",
+                       "Text Simplifier",
+                       "Video Speed Changer",
+                       "Video Voiceover"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Image-to-Video",
+                           "Video Speed Changer"
+                       ],
+                       [
+                           "Text Simplifier",
+                           "Video Voiceover"
+                       ],
+                       [
+                           "Video Speed Changer",
+                           "Video Voiceover"
+                       ]
+                   ]
+}

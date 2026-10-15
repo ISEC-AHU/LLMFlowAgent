@@ -1,0 +1,17 @@
+{
+    "pred_nodes":  [
+                       "Text-to-Audio",
+                       "Video Stabilizer",
+                       "Video Synchronization"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Text-to-Audio",
+                           "Video Synchronization"
+                       ],
+                       [
+                           "Video Stabilizer",
+                           "Video Synchronization"
+                       ]
+                   ]
+}

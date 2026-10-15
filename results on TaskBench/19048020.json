@@ -1,0 +1,17 @@
+{
+    "pred_nodes":  [
+                       "Article Spinner",
+                       "URL Extractor",
+                       "Video Search"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Article Spinner",
+                           "URL Extractor"
+                       ],
+                       [
+                           "Article Spinner",
+                           "Video Search"
+                       ]
+                   ]
+}

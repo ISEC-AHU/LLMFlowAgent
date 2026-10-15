@@ -1,0 +1,17 @@
+{
+    "pred_nodes":  [
+                       "Text Summarizer",
+                       "Text-to-Image",
+                       "Topic Generator"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Text Summarizer",
+                           "Text-to-Image"
+                       ],
+                       [
+                           "Topic Generator",
+                           "Text Summarizer"
+                       ]
+                   ]
+}

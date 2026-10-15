@@ -1,0 +1,22 @@
+{
+    "pred_nodes":  [
+                       "Image-to-Text",
+                       "URL Extractor",
+                       "Video Downloader",
+                       "Video Speed Changer"
+                   ],
+    "pred_edges":  [
+                       [
+                           "URL Extractor",
+                           "Video Downloader"
+                       ],
+                       [
+                           "Video Downloader",
+                           "Video Speed Changer"
+                       ],
+                       [
+                           "Video Speed Changer",
+                           "Image-to-Text"
+                       ]
+                   ]
+}

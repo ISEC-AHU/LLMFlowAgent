@@ -1,0 +1,17 @@
+{
+    "pred_nodes":  [
+                       "Keyword Extractor",
+                       "Video Speed Changer",
+                       "Video Stabilizer"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Keyword Extractor",
+                           "Video Speed Changer"
+                       ],
+                       [
+                           "Video Stabilizer",
+                           "Video Speed Changer"
+                       ]
+                   ]
+}

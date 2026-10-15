@@ -1,0 +1,27 @@
+{
+    "pred_nodes":  [
+                       "Audio Noise Reduction",
+                       "Video Speed Changer",
+                       "Video Voiceover",
+                       "Video-to-Audio",
+                       "Video-to-Text"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Video Voiceover",
+                           "Video-to-Audio"
+                       ],
+                       [
+                           "Video Voiceover",
+                           "Video-to-Text"
+                       ],
+                       [
+                           "Video-to-Audio",
+                           "Audio Noise Reduction"
+                       ],
+                       [
+                           "Video-to-Text",
+                           "Video Speed Changer"
+                       ]
+                   ]
+}

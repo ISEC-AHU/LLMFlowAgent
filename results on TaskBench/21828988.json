@@ -1,0 +1,22 @@
+{
+    "pred_nodes":  [
+                       "Text-to-Audio",
+                       "Text-to-Video",
+                       "Video Speed Changer",
+                       "Video Synchronization"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Text-to-Audio",
+                           "Video Synchronization"
+                       ],
+                       [
+                           "Text-to-Video",
+                           "Video Speed Changer"
+                       ],
+                       [
+                           "Video Speed Changer",
+                           "Video Synchronization"
+                       ]
+                   ]
+}

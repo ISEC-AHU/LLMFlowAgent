@@ -1,0 +1,36 @@
+{
+    "pred_nodes":  [
+                       "Image-to-Text",
+                       "Image-to-Video",
+                       "Text Summarizer",
+                       "Text-to-Image",
+                       "Text-to-Video",
+                       "Topic Generator"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Image-to-Video",
+                           "Image-to-Video"
+                       ],
+                       [
+                           "Text Summarizer",
+                           "Text-to-Image"
+                       ],
+                       [
+                           "Text-to-Image",
+                           "Image-to-Text"
+                       ],
+                       [
+                           "Text-to-Image",
+                           "Image-to-Video"
+                       ],
+                       [
+                           "Topic Generator",
+                           "Text Summarizer"
+                       ],
+                       [
+                           "Topic Generator",
+                           "Text-to-Video"
+                       ]
+                   ]
+}

@@ -1,0 +1,17 @@
+{
+    "pred_nodes":  [
+                       "Audio Downloader",
+                       "Audio Noise Reduction",
+                       "Audio-to-Image"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Audio Downloader",
+                           "Audio Noise Reduction"
+                       ],
+                       [
+                           "Audio Noise Reduction",
+                           "Audio-to-Image"
+                       ]
+                   ]
+}

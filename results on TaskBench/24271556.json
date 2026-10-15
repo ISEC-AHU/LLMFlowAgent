@@ -1,0 +1,22 @@
+{
+    "pred_nodes":  [
+                       "Audio-to-Image",
+                       "Image-to-Video",
+                       "Video Search",
+                       "Video-to-Image"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Audio-to-Image",
+                           "Image-to-Video"
+                       ],
+                       [
+                           "Video Search",
+                           "Video-to-Image"
+                       ],
+                       [
+                           "Video-to-Image",
+                           "Image-to-Video"
+                       ]
+                   ]
+}

@@ -1,0 +1,32 @@
+{
+    "pred_nodes":  [
+                       "Keyword Extractor",
+                       "Text Expander",
+                       "Text Sentiment Analysis",
+                       "Text Summarizer",
+                       "Text Translator",
+                       "Video Search"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Keyword Extractor",
+                           "Video Search"
+                       ],
+                       [
+                           "Text Expander",
+                           "Text Translator"
+                       ],
+                       [
+                           "Text Summarizer",
+                           "Text Expander"
+                       ],
+                       [
+                           "Text Summarizer",
+                           "Text Sentiment Analysis"
+                       ],
+                       [
+                           "Text Translator",
+                           "Keyword Extractor"
+                       ]
+                   ]
+}

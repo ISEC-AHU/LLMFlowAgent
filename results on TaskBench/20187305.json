@@ -1,0 +1,22 @@
+{
+    "pred_nodes":  [
+                       "Text Sentiment Analysis",
+                       "Text Simplifier",
+                       "URL Extractor",
+                       "Video-to-Text"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Video-to-Text",
+                           "Text Sentiment Analysis"
+                       ],
+                       [
+                           "Video-to-Text",
+                           "Text Simplifier"
+                       ],
+                       [
+                           "Video-to-Text",
+                           "URL Extractor"
+                       ]
+                   ]
+}

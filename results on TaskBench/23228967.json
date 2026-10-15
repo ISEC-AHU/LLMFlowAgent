@@ -1,0 +1,22 @@
+{
+    "pred_nodes":  [
+                       "Audio Downloader",
+                       "Text Expander",
+                       "URL Extractor",
+                       "Video Downloader"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Text Expander",
+                           "URL Extractor"
+                       ],
+                       [
+                           "URL Extractor",
+                           "Audio Downloader"
+                       ],
+                       [
+                           "URL Extractor",
+                           "Video Downloader"
+                       ]
+                   ]
+}

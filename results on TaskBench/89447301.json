@@ -1,0 +1,26 @@
+{
+    "pred_nodes":  [
+                       "Audio Downloader",
+                       "Audio Effects",
+                       "Text Simplifier",
+                       "URL Extractor"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Audio Downloader",
+                           "Audio Effects"
+                       ],
+                       [
+                           "Text Simplifier",
+                           "Audio Effects"
+                       ],
+                       [
+                           "Text Simplifier",
+                           "URL Extractor"
+                       ],
+                       [
+                           "URL Extractor",
+                           "Audio Downloader"
+                       ]
+                   ]
+}

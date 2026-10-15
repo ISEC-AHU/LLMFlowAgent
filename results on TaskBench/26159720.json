@@ -1,0 +1,22 @@
+{
+    "pred_nodes":  [
+                       "Video Downloader",
+                       "Video Search",
+                       "Video Speed Changer",
+                       "Video-to-Text"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Video Downloader",
+                           "Video Speed Changer"
+                       ],
+                       [
+                           "Video Downloader",
+                           "Video-to-Text"
+                       ],
+                       [
+                           "Video-to-Text",
+                           "Video Search"
+                       ]
+                   ]
+}

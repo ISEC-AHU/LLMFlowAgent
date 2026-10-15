@@ -1,0 +1,22 @@
+{
+    "pred_nodes":  [
+                       "Image-to-Text",
+                       "Text Search",
+                       "Text-to-Image",
+                       "Topic Generator"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Image-to-Text",
+                           "Text Search"
+                       ],
+                       [
+                           "Image-to-Text",
+                           "Topic Generator"
+                       ],
+                       [
+                           "Text Search",
+                           "Text-to-Image"
+                       ]
+                   ]
+}

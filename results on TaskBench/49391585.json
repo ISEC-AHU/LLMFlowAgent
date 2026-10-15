@@ -1,0 +1,22 @@
+{
+    "pred_nodes":  [
+                       "Image Downloader",
+                       "Image Style Transfer",
+                       "Image-to-Text",
+                       "Keyword Extractor"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Image Downloader",
+                           "Image Style Transfer"
+                       ],
+                       [
+                           "Image Downloader",
+                           "Image-to-Text"
+                       ],
+                       [
+                           "Image-to-Text",
+                           "Keyword Extractor"
+                       ]
+                   ]
+}

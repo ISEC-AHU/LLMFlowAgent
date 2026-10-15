@@ -1,0 +1,17 @@
+{
+    "pred_nodes":  [
+                       "Text Summarizer",
+                       "Text Translator",
+                       "URL Extractor"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Text Translator",
+                           "Text Summarizer"
+                       ],
+                       [
+                           "Text Translator",
+                           "URL Extractor"
+                       ]
+                   ]
+}

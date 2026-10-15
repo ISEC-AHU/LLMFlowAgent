@@ -1,0 +1,17 @@
+{
+    "pred_nodes":  [
+                       "Article Spinner",
+                       "Audio-to-Text",
+                       "Text Summarizer"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Audio-to-Text",
+                           "Article Spinner"
+                       ],
+                       [
+                           "Audio-to-Text",
+                           "Text Summarizer"
+                       ]
+                   ]
+}

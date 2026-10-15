@@ -1,0 +1,17 @@
+{
+    "pred_nodes":  [
+                       "Article Spinner",
+                       "Image Search",
+                       "Text-to-Audio"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Article Spinner",
+                           "Image Search"
+                       ],
+                       [
+                           "Article Spinner",
+                           "Text-to-Audio"
+                       ]
+                   ]
+}

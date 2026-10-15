@@ -1,0 +1,17 @@
+{
+    "pred_nodes":  [
+                       "Image Search",
+                       "Text Grammar Checker",
+                       "Voice Changer"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Text Grammar Checker",
+                           "Image Search"
+                       ],
+                       [
+                           "Text Grammar Checker",
+                           "Voice Changer"
+                       ]
+                   ]
+}

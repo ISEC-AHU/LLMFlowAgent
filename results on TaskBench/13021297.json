@@ -1,0 +1,17 @@
+{
+    "pred_nodes":  [
+                       "Audio-to-Text",
+                       "Video Synchronization",
+                       "Voice Changer"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Voice Changer",
+                           "Audio-to-Text"
+                       ],
+                       [
+                           "Voice Changer",
+                           "Video Synchronization"
+                       ]
+                   ]
+}

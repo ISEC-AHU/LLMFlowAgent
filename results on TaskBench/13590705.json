@@ -1,0 +1,17 @@
+{
+    "pred_nodes":  [
+                       "Audio Effects",
+                       "Text Expander",
+                       "Voice Changer"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Text Expander",
+                           "Audio Effects"
+                       ],
+                       [
+                           "Text Expander",
+                           "Voice Changer"
+                       ]
+                   ]
+}

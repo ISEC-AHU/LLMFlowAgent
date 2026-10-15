@@ -1,0 +1,27 @@
+{
+    "pred_nodes":  [
+                       "Text Sentiment Analysis",
+                       "Text Translator",
+                       "Topic Generator",
+                       "Video Speed Changer",
+                       "Video-to-Image"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Text Sentiment Analysis",
+                           "Video Speed Changer"
+                       ],
+                       [
+                           "Text Translator",
+                           "Topic Generator"
+                       ],
+                       [
+                           "Topic Generator",
+                           "Text Sentiment Analysis"
+                       ],
+                       [
+                           "Video Speed Changer",
+                           "Video-to-Image"
+                       ]
+                   ]
+}

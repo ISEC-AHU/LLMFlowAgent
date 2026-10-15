@@ -1,0 +1,21 @@
+{
+    "pred_nodes":  [
+                       "Image Colorizer",
+                       "Image Style Transfer",
+                       "Image-to-Video"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Image Colorizer",
+                           "Image Style Transfer"
+                       ],
+                       [
+                           "Image Colorizer",
+                           "Image-to-Video"
+                       ],
+                       [
+                           "Image Style Transfer",
+                           "Image-to-Video"
+                       ]
+                   ]
+}

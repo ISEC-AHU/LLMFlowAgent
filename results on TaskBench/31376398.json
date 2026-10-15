@@ -1,0 +1,21 @@
+{
+    "pred_nodes":  [
+                       "Text Expander",
+                       "Text Summarizer",
+                       "Text-to-Image"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Text Expander",
+                           "Text Summarizer"
+                       ],
+                       [
+                           "Text Expander",
+                           "Text-to-Image"
+                       ],
+                       [
+                           "Text Summarizer",
+                           "Text-to-Image"
+                       ]
+                   ]
+}

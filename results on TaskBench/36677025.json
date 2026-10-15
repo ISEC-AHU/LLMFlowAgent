@@ -1,0 +1,22 @@
+{
+    "pred_nodes":  [
+                       "Keyword Extractor",
+                       "Text Grammar Checker",
+                       "Text Translator",
+                       "Topic Generator"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Text Grammar Checker",
+                           "Text Translator"
+                       ],
+                       [
+                           "Text Translator",
+                           "Topic Generator"
+                       ],
+                       [
+                           "Topic Generator",
+                           "Keyword Extractor"
+                       ]
+                   ]
+}

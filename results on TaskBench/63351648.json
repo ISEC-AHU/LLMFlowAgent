@@ -1,0 +1,17 @@
+{
+    "pred_nodes":  [
+                       "Image Style Transfer",
+                       "Text-to-Image",
+                       "Video-to-Image"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Text-to-Image",
+                           "Image Style Transfer"
+                       ],
+                       [
+                           "Video-to-Image",
+                           "Image Style Transfer"
+                       ]
+                   ]
+}

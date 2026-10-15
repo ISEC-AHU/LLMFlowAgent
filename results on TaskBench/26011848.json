@@ -1,0 +1,12 @@
+{
+    "pred_nodes":  [
+                       "Image Style Transfer",
+                       "Text-to-Image"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Text-to-Image",
+                           "Image Style Transfer"
+                       ]
+                   ]
+}

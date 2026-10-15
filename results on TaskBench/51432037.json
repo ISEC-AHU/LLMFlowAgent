@@ -1,0 +1,17 @@
+{
+    "pred_nodes":  [
+                       "Audio Downloader",
+                       "Audio Effects",
+                       "Image-to-Text"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Audio Downloader",
+                           "Audio Effects"
+                       ],
+                       [
+                           "Image-to-Text",
+                           "Audio Effects"
+                       ]
+                   ]
+}

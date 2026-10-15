@@ -1,0 +1,26 @@
+{
+    "pred_nodes":  [
+                       "Audio-to-Image",
+                       "Image Search (by Image)",
+                       "Image Stitcher",
+                       "Image Style Transfer"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Audio-to-Image",
+                           "Image Search (by Image)"
+                       ],
+                       [
+                           "Image Search (by Image)",
+                           "Image Stitcher"
+                       ],
+                       [
+                           "Image Search (by Image)",
+                           "Image Style Transfer"
+                       ],
+                       [
+                           "Image Stitcher",
+                           "Image Style Transfer"
+                       ]
+                   ]
+}

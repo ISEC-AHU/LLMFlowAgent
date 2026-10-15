@@ -1,0 +1,22 @@
+{
+    "pred_nodes":  [
+                       "Image Search",
+                       "Text Sentiment Analysis",
+                       "Text Summarizer",
+                       "Video Search"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Text Summarizer",
+                           "Image Search"
+                       ],
+                       [
+                           "Text Summarizer",
+                           "Text Sentiment Analysis"
+                       ],
+                       [
+                           "Text Summarizer",
+                           "Video Search"
+                       ]
+                   ]
+}

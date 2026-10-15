@@ -1,0 +1,26 @@
+{
+    "pred_nodes":  [
+                       "Image Stitcher",
+                       "Image Style Transfer",
+                       "Text-to-Image",
+                       "Video-to-Image"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Image Style Transfer",
+                           "Image Stitcher"
+                       ],
+                       [
+                           "Text-to-Image",
+                           "Image Stitcher"
+                       ],
+                       [
+                           "Text-to-Image",
+                           "Image Style Transfer"
+                       ],
+                       [
+                           "Video-to-Image",
+                           "Image Style Transfer"
+                       ]
+                   ]
+}

@@ -1,0 +1,22 @@
+{
+    "pred_nodes":  [
+                       "Keyword Extractor",
+                       "Text Grammar Checker",
+                       "URL Extractor",
+                       "Video-to-Text"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Keyword Extractor",
+                           "Text Grammar Checker"
+                       ],
+                       [
+                           "Video-to-Text",
+                           "Keyword Extractor"
+                       ],
+                       [
+                           "Video-to-Text",
+                           "URL Extractor"
+                       ]
+                   ]
+}

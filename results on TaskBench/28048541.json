@@ -1,0 +1,22 @@
+{
+    "pred_nodes":  [
+                       "Audio-to-Image",
+                       "Image Stitcher",
+                       "Video Stabilizer",
+                       "Video-to-Image"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Audio-to-Image",
+                           "Image Stitcher"
+                       ],
+                       [
+                           "Video Stabilizer",
+                           "Video-to-Image"
+                       ],
+                       [
+                           "Video-to-Image",
+                           "Image Stitcher"
+                       ]
+                   ]
+}

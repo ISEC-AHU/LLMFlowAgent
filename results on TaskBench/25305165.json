@@ -1,0 +1,22 @@
+{
+    "pred_nodes":  [
+                       "Text Translator",
+                       "Video Search",
+                       "Video Synchronization",
+                       "Video-to-Image"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Text Translator",
+                           "Video Search"
+                       ],
+                       [
+                           "Video Search",
+                           "Video Synchronization"
+                       ],
+                       [
+                           "Video Search",
+                           "Video-to-Image"
+                       ]
+                   ]
+}

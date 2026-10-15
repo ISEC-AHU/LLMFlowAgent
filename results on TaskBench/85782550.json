@@ -1,0 +1,17 @@
+{
+    "pred_nodes":  [
+                       "Image Colorizer",
+                       "Image Stitcher",
+                       "Text-to-Image"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Image Colorizer",
+                           "Image Stitcher"
+                       ],
+                       [
+                           "Text-to-Image",
+                           "Image Stitcher"
+                       ]
+                   ]
+}

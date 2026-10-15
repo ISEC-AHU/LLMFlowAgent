@@ -1,0 +1,22 @@
+{
+    "pred_nodes":  [
+                       "Audio Effects",
+                       "Audio-to-Image",
+                       "Image-to-Text",
+                       "Video-to-Audio"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Audio Effects",
+                           "Audio-to-Image"
+                       ],
+                       [
+                           "Image-to-Text",
+                           "Audio Effects"
+                       ],
+                       [
+                           "Video-to-Audio",
+                           "Audio Effects"
+                       ]
+                   ]
+}

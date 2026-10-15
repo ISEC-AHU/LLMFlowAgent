@@ -1,0 +1,32 @@
+{
+    "pred_nodes":  [
+                       "Audio Downloader",
+                       "Audio-to-Image",
+                       "Image-to-Text",
+                       "Text-to-Image",
+                       "Topic Generator",
+                       "URL Extractor"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Audio Downloader",
+                           "Audio-to-Image"
+                       ],
+                       [
+                           "Image-to-Text",
+                           "URL Extractor"
+                       ],
+                       [
+                           "Text-to-Image",
+                           "Image-to-Text"
+                       ],
+                       [
+                           "Topic Generator",
+                           "Text-to-Image"
+                       ],
+                       [
+                           "URL Extractor",
+                           "Audio Downloader"
+                       ]
+                   ]
+}

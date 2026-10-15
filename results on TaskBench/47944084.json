@@ -1,0 +1,26 @@
+{
+    "pred_nodes":  [
+                       "Article Spinner",
+                       "Text Sentiment Analysis",
+                       "Text Summarizer",
+                       "Text-to-Video"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Article Spinner",
+                           "Text Sentiment Analysis"
+                       ],
+                       [
+                           "Text Sentiment Analysis",
+                           "Text Summarizer"
+                       ],
+                       [
+                           "Text Sentiment Analysis",
+                           "Text-to-Video"
+                       ],
+                       [
+                           "Text Summarizer",
+                           "Text-to-Video"
+                       ]
+                   ]
+}

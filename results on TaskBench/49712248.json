@@ -1,0 +1,22 @@
+{
+    "pred_nodes":  [
+                       "Article Spinner",
+                       "Image Search",
+                       "Text Simplifier",
+                       "Video Speed Changer"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Text Simplifier",
+                           "Article Spinner"
+                       ],
+                       [
+                           "Text Simplifier",
+                           "Image Search"
+                       ],
+                       [
+                           "Text Simplifier",
+                           "Video Speed Changer"
+                       ]
+                   ]
+}

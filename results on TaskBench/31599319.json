@@ -1,0 +1,17 @@
+{
+    "pred_nodes":  [
+                       "Text Paraphraser",
+                       "Text-to-Image",
+                       "Topic Generator"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Text Paraphraser",
+                           "Text-to-Image"
+                       ],
+                       [
+                           "Text Paraphraser",
+                           "Topic Generator"
+                       ]
+                   ]
+}

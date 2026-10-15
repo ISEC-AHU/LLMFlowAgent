@@ -1,0 +1,22 @@
+{
+    "pred_nodes":  [
+                       "Audio Splicer",
+                       "Image-to-Video",
+                       "Video Stabilizer",
+                       "Video Synchronization"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Audio Splicer",
+                           "Video Synchronization"
+                       ],
+                       [
+                           "Image-to-Video",
+                           "Video Synchronization"
+                       ],
+                       [
+                           "Video Synchronization",
+                           "Video Stabilizer"
+                       ]
+                   ]
+}

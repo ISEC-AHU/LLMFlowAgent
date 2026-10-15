@@ -1,0 +1,22 @@
+{
+    "pred_nodes":  [
+                       "Image Downloader",
+                       "Image Search (by Image)",
+                       "Image Stitcher",
+                       "Image Style Transfer"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Image Downloader",
+                           "Image Stitcher"
+                       ],
+                       [
+                           "Image Search (by Image)",
+                           "Image Style Transfer"
+                       ],
+                       [
+                           "Image Stitcher",
+                           "Image Style Transfer"
+                       ]
+                   ]
+}

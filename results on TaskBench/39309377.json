@@ -1,0 +1,17 @@
+{
+    "pred_nodes":  [
+                       "Audio-to-Text",
+                       "Text-to-Image",
+                       "Text-to-Video"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Audio-to-Text",
+                           "Text-to-Image"
+                       ],
+                       [
+                           "Audio-to-Text",
+                           "Text-to-Video"
+                       ]
+                   ]
+}

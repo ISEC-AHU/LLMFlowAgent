@@ -1,0 +1,22 @@
+{
+    "pred_nodes":  [
+                       "Image Search",
+                       "Keyword Extractor",
+                       "Text Simplifier",
+                       "Topic Generator"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Keyword Extractor",
+                           "Image Search"
+                       ],
+                       [
+                           "Keyword Extractor",
+                           "Topic Generator"
+                       ],
+                       [
+                           "Text Simplifier",
+                           "Keyword Extractor"
+                       ]
+                   ]
+}

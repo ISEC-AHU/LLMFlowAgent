@@ -1,0 +1,22 @@
+{
+    "pred_nodes":  [
+                       "Article Spinner",
+                       "Text-to-Video",
+                       "URL Extractor",
+                       "Video Synchronization"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Article Spinner",
+                           "Text-to-Video"
+                       ],
+                       [
+                           "Article Spinner",
+                           "URL Extractor"
+                       ],
+                       [
+                           "Text-to-Video",
+                           "Video Synchronization"
+                       ]
+                   ]
+}

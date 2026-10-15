@@ -1,0 +1,31 @@
+{
+    "pred_nodes":  [
+                       "Audio Downloader",
+                       "Audio-to-Image",
+                       "Image Stitcher",
+                       "Image-to-Video",
+                       "Video Synchronization"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Audio Downloader",
+                           "Audio-to-Image"
+                       ],
+                       [
+                           "Audio Downloader",
+                           "Video Synchronization"
+                       ],
+                       [
+                           "Audio-to-Image",
+                           "Image Stitcher"
+                       ],
+                       [
+                           "Image Stitcher",
+                           "Image-to-Video"
+                       ],
+                       [
+                           "Video Synchronization",
+                           "Image-to-Video"
+                       ]
+                   ]
+}

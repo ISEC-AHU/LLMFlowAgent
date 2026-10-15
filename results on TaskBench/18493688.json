@@ -1,0 +1,17 @@
+{
+    "pred_nodes":  [
+                       "Article Spinner",
+                       "Text Grammar Checker",
+                       "Text-to-Image"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Article Spinner",
+                           "Text Grammar Checker"
+                       ],
+                       [
+                           "Article Spinner",
+                           "Text-to-Image"
+                       ]
+                   ]
+}

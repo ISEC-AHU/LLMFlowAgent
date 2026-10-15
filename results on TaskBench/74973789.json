@@ -1,0 +1,17 @@
+{
+    "pred_nodes":  [
+                       "Image-to-Text",
+                       "Text Summarizer",
+                       "Video Speed Changer"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Image-to-Text",
+                           "Text Summarizer"
+                       ],
+                       [
+                           "Image-to-Text",
+                           "Video Speed Changer"
+                       ]
+                   ]
+}

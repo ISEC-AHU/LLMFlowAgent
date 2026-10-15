@@ -1,0 +1,22 @@
+{
+    "pred_nodes":  [
+                       "Text Grammar Checker",
+                       "Text Paraphraser",
+                       "Text Search",
+                       "URL Extractor"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Text Grammar Checker",
+                           "Text Paraphraser"
+                       ],
+                       [
+                           "Text Paraphraser",
+                           "Text Search"
+                       ],
+                       [
+                           "Text Search",
+                           "URL Extractor"
+                       ]
+                   ]
+}

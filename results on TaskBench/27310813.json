@@ -1,0 +1,27 @@
+{
+    "pred_nodes":  [
+                       "Audio Downloader",
+                       "Text Downloader",
+                       "Text Expander",
+                       "Text Grammar Checker",
+                       "URL Extractor"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Text Downloader",
+                           "Text Grammar Checker"
+                       ],
+                       [
+                           "Text Downloader",
+                           "URL Extractor"
+                       ],
+                       [
+                           "Text Grammar Checker",
+                           "Text Expander"
+                       ],
+                       [
+                           "URL Extractor",
+                           "Audio Downloader"
+                       ]
+                   ]
+}

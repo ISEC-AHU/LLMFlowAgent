@@ -1,0 +1,22 @@
+{
+    "pred_nodes":  [
+                       "Image Colorizer",
+                       "Image Downloader",
+                       "Image Style Transfer",
+                       "Image-to-Text"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Image Downloader",
+                           "Image Style Transfer"
+                       ],
+                       [
+                           "Image Style Transfer",
+                           "Image Colorizer"
+                       ],
+                       [
+                           "Image Style Transfer",
+                           "Image-to-Text"
+                       ]
+                   ]
+}

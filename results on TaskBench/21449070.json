@@ -1,0 +1,17 @@
+{
+    "pred_nodes":  [
+                       "Text Summarizer",
+                       "Video Stabilizer",
+                       "Video Voiceover"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Text Summarizer",
+                           "Video Voiceover"
+                       ],
+                       [
+                           "Video Stabilizer",
+                           "Video Voiceover"
+                       ]
+                   ]
+}

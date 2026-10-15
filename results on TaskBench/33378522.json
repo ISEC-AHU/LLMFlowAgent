@@ -1,0 +1,36 @@
+{
+    "pred_nodes":  [
+                       "Audio Effects",
+                       "Keyword Extractor",
+                       "Text Expander",
+                       "Text-to-Audio",
+                       "Video Synchronization",
+                       "Video-to-Text"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Audio Effects",
+                           "Video Synchronization"
+                       ],
+                       [
+                           "Keyword Extractor",
+                           "Audio Effects"
+                       ],
+                       [
+                           "Text Expander",
+                           "Text-to-Audio"
+                       ],
+                       [
+                           "Text-to-Audio",
+                           "Audio Effects"
+                       ],
+                       [
+                           "Video-to-Text",
+                           "Keyword Extractor"
+                       ],
+                       [
+                           "Video-to-Text",
+                           "Text Expander"
+                       ]
+                   ]
+}

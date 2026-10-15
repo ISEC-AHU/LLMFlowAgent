@@ -1,0 +1,22 @@
+{
+    "pred_nodes":  [
+                       "Text Grammar Checker",
+                       "Text Summarizer",
+                       "Text-to-Video",
+                       "Topic Generator"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Text Grammar Checker",
+                           "Text Summarizer"
+                       ],
+                       [
+                           "Text Grammar Checker",
+                           "Topic Generator"
+                       ],
+                       [
+                           "Text Summarizer",
+                           "Text-to-Video"
+                       ]
+                   ]
+}

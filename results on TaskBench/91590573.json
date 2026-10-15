@@ -1,0 +1,27 @@
+{
+    "pred_nodes":  [
+                       "Audio Noise Reduction",
+                       "Audio Splicer",
+                       "Video Stabilizer",
+                       "Video Synchronization",
+                       "Voice Changer"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Audio Noise Reduction",
+                           "Voice Changer"
+                       ],
+                       [
+                           "Audio Splicer",
+                           "Audio Noise Reduction"
+                       ],
+                       [
+                           "Video Stabilizer",
+                           "Video Synchronization"
+                       ],
+                       [
+                           "Voice Changer",
+                           "Video Synchronization"
+                       ]
+                   ]
+}

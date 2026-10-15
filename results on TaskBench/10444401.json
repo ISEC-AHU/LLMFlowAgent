@@ -1,0 +1,17 @@
+{
+    "pred_nodes":  [
+                       "Image-to-Video",
+                       "Video Synchronization",
+                       "Video Voiceover"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Image-to-Video",
+                           "Video Voiceover"
+                       ],
+                       [
+                           "Video Voiceover",
+                           "Video Synchronization"
+                       ]
+                   ]
+}

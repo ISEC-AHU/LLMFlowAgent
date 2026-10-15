@@ -5,7 +5,7 @@ providers:
   openai:
     api_key: ${OPENAI_API_KEY}
     base_url: ${OPENAI_BASE_URL:https://api.openai.com/v1}
-    default_model: gpt-4o-mini
+    default_model: 
     options:
       timeout: 180
       max_retries: 3
@@ -13,7 +13,7 @@ providers:
   azure:
     api_key: ${AZURE_API_KEY}
     base_url: ${AZURE_ENDPOINT}/openai/deployments/${DEPLOYMENT_NAME}
-    default_model: gpt-4
+    default_model: 
     options:
       api_version: 2024-02-15-preview
       timeout: 60
@@ -21,7 +21,7 @@ providers:
 
   anthropic:
     api_key: ${ANTHROPIC_API_KEY}
-    default_model: claude-3-5-sonnet-20241022
+    default_model: 
     options:
       timeout: 60
       max_retries: 3
@@ -29,7 +29,7 @@ providers:
   gemini:
     api_key: ${GEMINI_API_KEY}
     base_url: ${GEMINI_BASE_URL:https://generativelanguage.googleapis.com/v1beta/openai/}
-    default_model: gemini-3-flash-preview
+    default_model: 
     options:
       timeout: 60
       max_retries: 3
@@ -38,7 +38,7 @@ providers:
   qwen:
     api_key: ${QWEN_API_KEY}
     base_url: https://dashscope.aliyuncs.com/compatible-mode/v1
-    default_model: qwen-plus
+    default_model: 
     options:
       timeout: 60
       max_retries: 3
@@ -46,7 +46,7 @@ providers:
   zhipu:
     api_key: ${ZHIPU_API_KEY}
     base_url: https://open.bigmodel.cn/api/paas/v4
-    default_model: glm-4.7
+    default_model: 
     options:
       timeout: 60
       max_retries: 3
@@ -62,7 +62,7 @@ providers:
   deepseek:
     api_key: ${DEEPSEEK_API_KEY}
     base_url: https://api.deepseek.com
-    default_model: deepseek-chat
+    default_model: 
     options:
       timeout: 60
       max_retries: 3
@@ -70,7 +70,7 @@ providers:
   baichuan:
     api_key: ${BAICHUAN_API_KEY}
     base_url: https://api.baichuan-ai.com/v1
-    default_model: Baichuan2-Turbo
+    default_model: 
     options:
       timeout: 60
       max_retries: 3
@@ -86,57 +86,57 @@ providers:
 roles:
   workflow_generation:
     provider: gemini
-    model: gemini-3-flash-preview
+    model: 
   workflow_regeneration:
     provider: openai
-    model: gpt-4o-mini
+    model: 
   task_decomposition:
     provider: openai
-    model: gpt-5.2
+    model: 
   query_rewrite:
     provider: openai
-    model: gpt-4o-mini
+    model: 
   universal_rubric:
     provider: openai
-    model: gpt-4o-mini
+    model: 
   draft_rubric:
     provider: openai
-    model: gpt-4o-mini
+    model: 
   evaluation_rubric:
     provider: qwen
-    model: qwen-plus
+    model: 
   refinement:
     provider: qwen
-    model: qwen-plus
+    model:
   discrepancy_analysis:
     provider: openai
-    model: gpt-4o-mini
+    model: 
   embedding:
     provider: qwen
-    model: text-embedding-v2
+    model: 
   rerank:
     provider: qwen
-    model: qwen3-rerank
+    model: 
 
 defaults:
   universal_rubric:
     provider: openai
-    model: gpt-4o-mini
+    model: 
   draft_rubric:
     provider: openai
-    model: gpt-4o-mini
+    model: 
   evaluation_rubric:
     provider: qwen
-    model: qwen-plus
+    model: 
   refinement:
     provider: qwen
-    model: qwen-plus
+    model: 
   simulation:
     - provider: openai
-      model: gpt-4o-mini
+      model: 
     - provider: gemini
-      model: gemini-3-flash-preview
+      model: 
     - provider: qwen
-      model: qwen-plus
+      model: 
     - provider: deepseek
-      model: deepseek-chat
+      model: 

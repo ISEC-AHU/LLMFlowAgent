@@ -1,0 +1,17 @@
+{
+    "pred_nodes":  [
+                       "Audio Splicer",
+                       "Audio-to-Image",
+                       "Video-to-Audio"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Video-to-Audio",
+                           "Audio Splicer"
+                       ],
+                       [
+                           "Video-to-Audio",
+                           "Audio-to-Image"
+                       ]
+                   ]
+}

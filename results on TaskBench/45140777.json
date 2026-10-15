@@ -1,0 +1,22 @@
+{
+    "pred_nodes":  [
+                       "Audio Splicer",
+                       "Audio-to-Text",
+                       "Text-to-Audio",
+                       "Voice Changer"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Audio Splicer",
+                           "Audio-to-Text"
+                       ],
+                       [
+                           "Text-to-Audio",
+                           "Audio Splicer"
+                       ],
+                       [
+                           "Voice Changer",
+                           "Audio Splicer"
+                       ]
+                   ]
+}

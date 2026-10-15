@@ -1,0 +1,22 @@
+{
+    "pred_nodes":  [
+                       "Image Downloader",
+                       "Image Stitcher",
+                       "Text Translator",
+                       "Text-to-Image"
+                   ],
+    "pred_edges":  [
+                       [
+                           "Image Downloader",
+                           "Image Stitcher"
+                       ],
+                       [
+                           "Text Translator",
+                           "Text-to-Image"
+                       ],
+                       [
+                           "Text-to-Image",
+                           "Image Stitcher"
+                       ]
+                   ]
+}
