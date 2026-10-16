@@ -128,7 +128,7 @@ We construct a fixed API knowledge base from the tool summaries provided by Task
 The best and second-best results are shown in bold and underlined, respectively.
 
 | Method | PMR (%) ↑ | Node F1 (%) ↑ | Edge F1 (%) ↑ | sGED ↓ |
-|:--|--:|--:|--:|--:|
+|:-:|:-:|:-:|:-:|:-:|
 | Few-shot | 25.00 | 85.27 | 56.64 | 4.26 |
 | CoT | 33.33 | 88.17 | 60.53 | 3.58 |
 | RAG+CoT | 30.00 | 89.46 | 60.40 | 3.55 |
@@ -154,7 +154,7 @@ The TaskBench ablation study keeps the model and retrieval configuration of ever
 The best and second-best results are shown in bold and underlined, respectively.
 
 | Setting | PMR (%) ↑ | Node F1 (%) ↑ | Edge F1 (%) ↑ | sGED ↓ |
-|:--|--:|--:|--:|--:|
+|:-:|:-:|:-:|:-:|:-:|
 | w/o Coordinator | 62.00 | 94.51 | 80.24 | <u>1.57</u> |
 | w/o Evaluation & Repair | 54.33 | 90.19 | 76.38 | 1.96 |
 | w/o Evaluation | 55.67 | 90.67 | 77.57 | 1.90 |
@@ -195,14 +195,16 @@ We conducted a user study with ten participants to assess the usability and perc
 
 Each participant completed four workflow-modeling tasks selected from the PMo Dataset [8] and TaskBench [1]. Participants created or selected a tool knowledge base, submitted the natural-language requirements, inspected the generated workflows and evaluation reports, selected execution logs when requested, reviewed the repair processes, and examined the final workflows. After completing all four tasks, they rated seven statements about their overall experience using a five-point Likert scale: 1 (**Strongly disagree**), 2 (**Disagree**), 3 (**Neutral**), 4 (**Agree**), and 5 (**Strongly agree**).
 
-![LLMFlowAgent user-study questionnaire](images/user-study-questionnaire.png)
+![LLMFlowAgent user-study questionnaire](images/LLMFlowAgent_User_Study_Questionnaire_01.jpg)
+
+
 
 #### Participant-Level Responses
 
 All ten participants completed their assigned study activities. The de-identified responses are shown below.
 
 | Participant | Role | Workflow experience | Task completed | Q1 | Q2 | Q3 | Q4 | Q5 | Q6 | Q7 |
-|:--|:--|:--|:--:|--:|--:|--:|--:|--:|--:|--:|
+|:-:|:-:|:-:|:--:|---|---|---|---|---|---|---|
 | P01 | Graduate student | 1–3 years | Yes | 4 | 4 | 5 | 5 | 4 | 3 | 4 |
 | P02 | Researcher | More than 3 years | Yes | 4 | 4 | 5 | 5 | 5 | 4 | 4 |
 | P03 | Graduate student | Less than 1 year | Yes | 4 | 5 | 4 | 4 | 4 | 5 | 4 |
@@ -214,21 +216,11 @@ All ten participants completed their assigned study activities. The de-identifie
 | P09 | Graduate student | 1–3 years | Yes | 4 | 3 | 4 | 4 | 3 | 4 | 4 |
 | P10 | Graduate student | Less than 1 year | Yes | 4 | 5 | 3 | 5 | 4 | 4 | 3 |
 
-#### User-Study Results
+#### User Study Results
 
-A rating of 4 or 5 is counted as a positive response. Mean ratings range from **4.0 to 4.5**, and 62 of the 70 item responses (**88.6%**) are positive.
+![LLMFlowAgent_User_Study_Likert](images/LLMFlowAgent_User_Study_Likert.png)
 
-| Item | Mean | Positive responses | Positive rate |
-|:--:|--:|--:|--:|
-| Q1 | 4.2 | 10/10 | 100% |
-| Q2 | 4.1 | 8/10 | 80% |
-| Q3 | 4.2 | 9/10 | 90% |
-| Q4 | 4.5 | 10/10 | 100% |
-| Q5 | 4.2 | 9/10 | 90% |
-| Q6 | 4.0 | 8/10 | 80% |
-| Q7 | 4.0 | 8/10 | 80% |
-
-The evaluation-report item (Q4) received the highest mean rating of 4.5. Nine participants agreed or strongly agreed that the final workflow satisfied the given requirement (Q3), and eight participants agreed or strongly agreed that the system was easy to use (Q6). These descriptive results indicate that participants considered LLMFlowAgent useful and effective for workflow modeling. Because the study included only ten participants, the results should be interpreted as complementary evidence rather than as a population-level usability claim.
+The results show consistently positive evaluations across all seven statements, with no participant selecting *Disagree* or *Strongly disagree*. Evaluation usefulness received the highest rating (Median = 4.5, IQR = 1), and all participants agreed that the evaluation report helped them identify modeling errors. All participants also agreed that the generated workflows contained appropriate tasks or nodes (Median = 4, IQR = 0). Moreover, 90% gave positive ratings to requirement satisfaction and repair effectiveness, while 80% positively rated dependency correctness, ease of use, and effort reduction. These results indicate that participants generally found LLMFlowAgent helpful for generating and refining workflow models while reducing manual effort.
 
 ## 🛠️ Getting Started
 
@@ -335,4 +327,4 @@ Open <http://localhost:5173> to use LLMFlowAgent. The frontend connects to the l
 5. P. Lewis, E. Perez, A. Piktus, F. Petroni, V. Karpukhin, N. Goyal, *et al.*, [“Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks,”](https://proceedings.neurips.cc/paper/2020/hash/6b493230205f780e1bc26945df7481e5-Abstract.html) in *Advances in Neural Information Processing Systems*, vol. 33, pp. 9459–9474, 2020.
 6. H. Kourani, A. Berti, D. Schuster, and W. M. P. van der Aalst, [“ProMoAI: Process Modeling with Generative AI,”](https://doi.org/10.24963/ijcai.2024/1014) in *Proceedings of the Thirty-Third International Joint Conference on Artificial Intelligence*, pp. 8708–8712, 2024.
 7. J. Xu, W. Du, X. Liu, and X. Li, [“LLM4Workflow: An LLM-Based Automated Workflow Model Generation Tool,”](https://doi.org/10.1145/3691620.3695360) in *Proceedings of the 39th IEEE/ACM International Conference on Automated Software Engineering*, pp. 2394–2398, 2024.
-8. A. Brissard, F. Cuppens, and A. Zouaq, [“What Is the Best Process Model Representation? A Comparative Analysis for Process Modeling with Large Language Models,”](https://arxiv.org/abs/2507.11356) in *Business Process Management Workshops*, vol. 569, pp. 55–68, 2025.
+8. A. Brissard, F. Cuppens, and A. Zouaq, [“What Is the Best Process Model Representation? A Comparative Analysis for Process Modeling with Large Language Models,”](https://arxiv.org/abs/2507.11356) in *Business Process Management Workshops*, vol. 569, pp. 55–68, 2026.
