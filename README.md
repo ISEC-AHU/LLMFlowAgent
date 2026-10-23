@@ -1,12 +1,12 @@
-# LLMFlowAgent: An LLM-Based Multi-Agent Collaborative Framework for Workflow Modeling
+# LLMFlowAgent: An LLM-Based Multi-Agent Framework for Automated Workflow Modeling
 
-LLMFlowAgent employs four specialized agents to emulate the iterative modeling process of human experts, enabling workflow model generation and refinement from users' natural-language descriptions.
+LLMFlowAgent employs four specialized agents to emulate the iterative modeling process of human experts, enabling automated workflow model generation and refinement from users' natural-language descriptions.
 
 ![LLMFlowAgent multi-agent framework](images/LLMFlowAgent-framework.jpg)
 
 ## 🎥 Demonstration
 
-For more details, you can watch the [demo video](https://youtu.be/o7lAHVpeDTg).
+For more details, you can watch the [demo video](https://youtu.be/UdEQ_lQ9ups).
 
 ## ✍️ How to Use
 
